@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Стас Ганиев](https://up.htmlacademy.ru/adaptive/17/user/912255).
-* Наставник: `Неизвестно`.
+* Наставник: [Валентина Видяева](https://htmlacademy.ru/profile/id189794).
 
 ---
 
