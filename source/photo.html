@@ -25,7 +25,7 @@
 
   <header class="header">
     <div class="header__title menu-box">
-      <img class="header__logo" src="" width="" height="" alt="PINK">
+      <a class="header__logo" href="index.html"><img src="" width="" height="" alt="PINK"></a>
       <button class="header__button-menu" type="button"></button>
     </div>
     <ul class="header__menu-list">
@@ -39,7 +39,7 @@
         <a class="header__menu-item" href="contest.html">Конкурс</a>
       </li>
       <li class="menu-box">
-        <a class="header__menu-item" href="#">HTML Acsdemy</a>
+        <a class="header__menu-item" href="https://htmlacademy.ru/intensive/adaptive">HTML Acsdemy</a>
       </li>
     </ul>
   </header>
@@ -50,24 +50,28 @@
       Фотографии пользователей
     </h1>
 
-    <section class="caption-box">
+    <div class="caption-box">
       Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
-    </section>
+    </div>
 
+    <h2 class="visually-hidden">
+      Последние фотографии
+    </h2>
     <section class="gallery">
 
       <ul class="gallery__list">
 
         <li class="gallery__post">
-          <figure class="gallery__photo-holder">
+          <figure class="gallery__photo-box">
             <img class="gallery__photo gallery__photo_panoram" src="" width="" height="" alt="Панорама дня">
+            <div class="gallery__photo-box_panoram">Панорама дня</div>
           </figure>
-          <div class="gallery__text-holder post">
+          <div class="gallery__text-box post">
             <p class="post__caption">
               <span class="post__author">Анна</span>
               <span class="post__time">(5 минут назад)</span>
             </p>
-            <p class="post__ text">
+            <p class="post__text">
               Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
             </p>
             <p class="post__likes">
@@ -78,15 +82,15 @@
         </li>
 
         <li class="gallery__post">
-          <figure class="gallery__photo-holder">
+          <figure class="gallery__photo-box">
             <img class="gallery__photo" src="" width="" height="" alt="Левон (5 часов назад)">
           </figure>
-          <div class="gallery__text-holder post">
+          <div class="gallery__text-box post">
             <p class="post__caption">
               <span class="post__author">Левон</span>
               <span class="post__time">(5 часов назад)</span>
             </p>
-            <p class="post__ text">
+            <p class="post__text">
               Вчера он на луну летал, сегодня в руки к нам попал.
             </p>
             <p class="post__likes">
@@ -97,15 +101,15 @@
         </li>
 
         <li class="gallery__post">
-          <figure class="gallery__photo-holder">
+          <figure class="gallery__photo-box">
             <img class="gallery__photo" src="" width="" height="" alt="Антон (12 часов назад)">
           </figure>
-          <div class="gallery__text-holder post">
+          <div class="gallery__text-box post">
             <p class="post__caption">
               <span class="post__author">Антон</span>
               <span class="post__time">(12 часов назад)</span>
             </p>
-            <p class="post__ text">
+            <p class="post__text">
               Соседи будут рады!
             </p>
             <p class="post__likes">
@@ -116,15 +120,15 @@
         </li>
 
         <li class="gallery__post">
-          <figure class="gallery__photo-holder">
+          <figure class="gallery__photo-box">
             <img class="gallery__photo" src="" width="" height="" alt="Борис (20 часов назад)">
           </figure>
-          <div class="gallery__text-holder post">
+          <div class="gallery__text-box post">
             <p class="post__caption">
               <span class="post__author">Борис</span>
               <span class="post__time">(20 часов назад)</span>
             </p>
-            <p class="post__ text">
+            <p class="post__text">
               Здесь могла быть ваша цитата о высоком и вечном.
             </p>
             <p class="post__likes">
@@ -135,15 +139,15 @@
         </li>
 
         <li class="gallery__post">
-          <figure class="gallery__photo-holder">
+          <figure class="gallery__photo-box">
             <img class="gallery__photo" src="" width="" height="" alt="Сергей (25 часов назад)">
           </figure>
-          <div class="gallery__text-holder post">
+          <div class="gallery__text-box post">
             <p class="post__caption">
               <span class="post__author">Сергей</span>
               <span class="post__time">(25 часов назад)</span>
             </p>
-            <p class="post__ text">
+            <p class="post__text">
               Самая кубанская в мире!
             </p>
             <p class="post__likes">
@@ -154,15 +158,15 @@
         </li>
 
         <li class="gallery__post">
-          <figure class="gallery__photo-holder">
+          <figure class="gallery__photo-box">
             <img class="gallery__photo" src="" width="" height="" alt="Максим (40 часов назад)">
           </figure>
-          <div class="gallery__text-holder post">
+          <div class="gallery__text-box post">
             <p class="post__caption">
               <span class="post__author">Максим</span>
               <span class="post__time">(40 часов назад)</span>
             </p>
-            <p class="post__ text">
+            <p class="post__text">
               Где снег-то?
             </p>
             <p class="post__likes">
@@ -173,15 +177,15 @@
         </li>
 
         <li class="gallery__post">
-          <figure class="gallery__photo-holder">
+          <figure class="gallery__photo-box">
             <img class="gallery__photo" src="" width="" height="" alt="Надежда (45 часов назад)">
           </figure>
-          <div class="gallery__text-holder post">
+          <div class="gallery__text-box post">
             <p class="post__caption">
               <span class="post__author">Надежда</span>
               <span class="post__time">(45 часов назад)</span>
             </p>
-            <p class="post__ text">
+            <p class="post__text">
               Всем GM и взаимные лайки!
             </p>
             <p class="post__likes">
@@ -195,19 +199,22 @@
 
     </section>
 
+    <h2 class="visually-hidden">
+      Поделиться фотографией
+    </h2>
     <section class="new-post">
       <!-- TODO: Создать пост -->
     </section>
 
   </main>
 
-  <footer class="footer multisection multisection_light">
+  <footer class="footer combo-box combo-box_light">
 
-    <div class="multisection__top">
-      <img class="footer__logo" src="" width="" height="" alt="PINK">
+    <div class="combo-box__button">
+      <a class="footer__logo" href="index.html"><img src="" width="" height="" alt="PINK"></a>
     </div>
 
-    <div class="multisection__middle">
+    <div class="combo-box__links">
       <ul class="icons-list">
         <li class="icons__item">
           <a class="button button_icon button_light btn-social-twitter" href="#"><img src="" width="" height="" alt="Twitter"></a>
@@ -221,9 +228,9 @@
       </ul>
     </div>
 
-    <div class="multisection__bottom">
+    <div class="combo-box__copyright">
       <p class="footer__developer">
-        <a href="#">
+        <a href="https://htmlacademy.ru/intensive/adaptive">
           Разработано
           <img class="footer__developer-logo" src="" width="" height="" alt="HTML Academy">
         </a>
