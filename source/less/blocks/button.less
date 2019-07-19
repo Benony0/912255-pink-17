@@ -2,16 +2,29 @@
   display: inline-block;
   padding: 15px 35px;
 
-  font: inherit;
-  font-family: "Open Sans", Arial, sans-serif;
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
-  color: @color-white;
   text-align: center;
   vertical-align: middle;
 
-  background-color: @color-blue;
-  border: 3px solid @color-white;
-  border-radius: 50px;
+
+  &_circle {
+    border: 3px solid @color-white;
+    border-radius: 50px;
+  }
+
+  &_dark {
+    color: @color-white;
+    background-color: @color-blue;
+  }
+
+  &_light {
+    color: @color-blue;
+    background-color: @color-white;
+  }
+
+  &_icon {
+    border: none;
+  }
 }
