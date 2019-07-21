@@ -26,9 +26,12 @@
   <header class="header">
     <div class="header__title menu-box">
       <a class="header__logo"><img src="http://placehold.it/150x100" width="75" height="23" alt="PINK"></a>
-      <button class="header__button-menu" type="button"></button>
+      <button class="header__button-menu" type="button">
+        <span class="header__button-menu_close"></span>
+        <span class="header__button-menu_burger hidden"></span>
+      </button>
     </div>
-    <ul class="header__menu-list">
+    <ul class="header__menu-list list-default">
       <li class="menu-box menu-box_inset-shadow">
         <a class="header__menu-item" href="index.html">Главная</a>
       </li>
@@ -60,7 +63,7 @@
     </div>
 
     <div class="combo-box__links">
-      <ul class="icons">
+      <ul class="icons list-default">
         <li class="icons__item">
           <a class="button button_icon button_light btn-social-twitter" href="#"><img src="http://placehold.it/150x100" width="50" height="50" alt="Twitter"></a>
         </li>

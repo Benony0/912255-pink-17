@@ -1,0 +1,56 @@
+.gallery {
+  background-color: @color-white;
+}
+
+.gallery__list {
+  border: none;
+}
+
+.gallery__post {
+  border: none;
+}
+
+.gallery__photo-box {
+  position: relative;
+
+  margin: 0;
+  padding: 0;
+
+  border: none;
+
+  &_simple {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  &_panoram {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 0;
+    z-index: 1;
+
+    padding: 6px 20px;
+
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 24px;
+    color: @color-white;
+    text-transform: uppercase;
+
+    background-color: @color-red;
+  }
+}
+
+.gallery__photo {
+  width: 100%;
+  height: 100%;
+  max-height: 180px;
+
+  border: none;
+}
+
+.gallery__text-box {
+  padding: 20px;
+  padding-top: 0;
+}
