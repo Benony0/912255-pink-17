@@ -1,0 +1,53 @@
+.header {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.8;
+  color: @color-white;
+  text-transform: uppercase;
+  text-align: center;
+
+  background-color: @color-blue;
+}
+
+.header__menu-list {
+  border: none;
+}
+
+.header__title {
+  display: flex;
+  justify-content: space-between;
+
+  border-bottom: @color-black 1px solid;
+}
+
+.header__menu-link {
+  display: block;
+  padding: 16px 0;
+
+  text-decoration: none;
+  border-bottom: @color-black 1px solid;
+  box-shadow: inset 0 1px 0 0 fade(@color-white, 15%);
+
+  &:visited {
+    color: @color-white;
+  }
+}
+
+.header__logo {
+  margin: 16px 20px;
+
+  background-color: @color-blue;
+  border: #ff00ff 1px dashed;
+}
+
+.header__button-menu {
+  margin: 16px 20px;
+
+  &_close {
+    border: none;
+  }
+
+  &_burger {
+    border: none;
+  }
+}

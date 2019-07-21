@@ -16,7 +16,7 @@
     <link href="css/style.css" rel="stylesheet">
     <!-- <link href="css/min_style.css" rel="stylesheet"> -->
     <!-- Подключение шрифтов -->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Merriweather|PT+Sans+Caption:400,700" rel="stylesheet">или другой шрифт -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=cyrillic" rel="stylesheet">
 
     <!-- <link rel="shortcut icon" type="image/x-icon" href="img/logo16.png">или другой путь -->
 
@@ -24,22 +24,25 @@
 <body>
 
   <header class="header">
-    <div class="header__title menu-box">
-      <a class="header__logo"><img src="" width="" height="" alt="PINK"></a>
-      <button class="header__button-menu" type="button"></button>
+    <div class="header__title">
+      <a class="header__logo"><img src="http://placehold.it/150x100" width="75" height="23" alt="PINK"></a>
+      <button class="header__button-menu" type="button">
+        <span class="header__button-menu_close"></span>
+        <span class="header__button-menu_burger hidden"></span>
+      </button>
     </div>
-    <ul class="header__menu-list">
-      <li class="menu-box">
-        <a class="header__menu-item">Главная</a>
+    <ul class="header__menu-list list-default">
+      <li class="header__menu-item">
+        <a class="header__menu-link">Главная</a>
       </li>
-      <li class="menu-box">
-        <a class="header__menu-item" href="photo.html">Фотографии</a>
+      <li class="header__menu-item">
+        <a class="header__menu-link" href="photo.html">Фотографии</a>
       </li>
-      <li class="menu-box">
-        <a class="header__menu-item" href="contest.html">Конкурс</a>
+      <li class="header__menu-item">
+        <a class="header__menu-link" href="contest.html">Конкурс</a>
       </li>
-      <li class="menu-box">
-        <a class="header__menu-item" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <li class="header__menu-item">
+        <a class="header__menu-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </li>
     </ul>
   </header>
@@ -49,7 +52,6 @@
     <h1 class="main-title visually-hidden">Добро пожаловать в PINK</h1>
 
     <div class="welcome">
-      <img class="welcome__picture" src="" width="" height="" alt="Добро пожаловать в PINK">
     </div>
 
     <section class="support combo-box combo-box_dark">
@@ -61,15 +63,15 @@
       </div>
 
       <div class="combo-box__links">
-        <ul class="icons-list">
+        <ul class="icons list-default">
           <li class="icons__item">
-            <a class="button button_icon btn-os-apple" href="#"><img src="" width="" height="" alt="Apple"></a>
+            <a class="button button_icon btn-os-apple" href="https://www.apple.com/ru/itunes/"><img src="http://placehold.it/150x100" width="50" height="50" alt="Apple"></a>
           </li>
           <li class="icons__item">
-            <a class="button button_icon btn-os-android" href="#"><img src="" width="" height="" alt="Android"></a>
+            <a class="button button_icon btn-os-android" href="https://play.google.com/store?hl=ru"><img src="http://placehold.it/150x100" width="50" height="50" alt="Android"></a>
           </li>
           <li class="icons__item">
-            <a class="button button_icon btn-os-windows" href="#"><img src="" width="" height="" alt="Windows"></a>
+            <a class="button button_icon btn-os-windows" href="https://www.microsoft.com/ru-ru/store/apps/windows"><img src="http://placehold.it/150x100" width="50" height="50" alt="Windows"></a>
           </li>
         </ul>
       </div>
@@ -83,7 +85,7 @@
     </section>
 
     <div class="leads">
-      <ul class="leads__items">
+      <ul class="leads__items list-default">
         <li class="leads__item">Устали от серости мегаполиса?</li>
         <li class="leads__item">Нам есть, что вам предложить!</li>
       </ul>
@@ -92,7 +94,7 @@
     <section class="profits">
 
       <h2 class="visually-hidden">Наши преимущества</h2>
-      <ul class="profits__items">
+      <ul class="profits__items list-default">
         <li class="profits__item">
           <h2 class="profits__title">Поднимает настроение</h2>
           <p class="profits__text-box">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
@@ -107,7 +109,7 @@
         </li>
       </ul>
       <div class="profits__footer">
-          <img class="profits__picture" src="" width="" height="" alt="Всем привет!">
+          <img class="profits__picture" src="http://placehold.it/150x100" width="156" height="278" alt="Всем привет!">
       </div>
 
     </section>
