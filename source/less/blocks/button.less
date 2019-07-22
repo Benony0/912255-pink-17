@@ -1,0 +1,30 @@
+.button {
+  display: inline-block;
+  padding: 15px 35px;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1;
+  text-align: center;
+  vertical-align: middle;
+
+  &_circle {
+    border: 3px solid @color-white;
+    border-radius: 50px;
+  }
+
+  &_dark {
+    color: @color-white;
+    background-color: @color-blue;
+  }
+
+  &_light {
+    color: @color-blue;
+    background-color: @color-white;
+  }
+
+  &_icon {
+    padding: 0;
+    margin: 0;
+  }
+}
