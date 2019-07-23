@@ -24,6 +24,7 @@
   display: block;
   padding: 16px 0;
 
+  color: @color-white;
   text-decoration: none;
   border-bottom: @color-black 1px solid;
   box-shadow: inset 0 1px 0 0 fade(@color-white, 15%);
@@ -34,10 +35,17 @@
 }
 
 .header__logo {
+  display: block;
   margin: 16px 20px;
 
   background-color: @color-blue;
-  border: #ff00ff 1px dashed;
+}
+
+.header__logotablet {
+  display: none;
+  margin: 29px 20px;
+
+  background-color: @color-blue;
 }
 
 .header__button-menu {
@@ -49,5 +57,14 @@
 
   &_burger {
     border: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .header__logo {
+    display: none;
+  }
+  .header__logotablet {
+    display: block;
   }
 }

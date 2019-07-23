@@ -1,4 +1,8 @@
 .profits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   padding: 0 20px;
 
   font-weight: normal;
@@ -11,6 +15,7 @@
 }
 
 .profits__items {
+  max-width: 280px;
   padding: 20px 0;
 }
 
@@ -22,10 +27,11 @@
   font-weight: bold;
   font-size: 18px;
   color: @color-black;
-  padding-bottom: 16px;
+  padding-bottom: 0;
 }
 
 .profits__text-box {
+  padding-top: 0;
   padding-bottom: 20px;
 }
 
@@ -34,5 +40,24 @@
 }
 
 .profits__picture {
-  border: none;
+  display: block;
+  width: 160px;
+  height: 275px;
+}
+
+@media (min-width: @tablet-width) {
+  .profits {
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    text-align: left;
+  }
+
+  .profits__items {
+    max-width: 310px;
+  }
+
+  .profits__picture {
+    width: 265px;
+    height: 480px;
+  }
 }
