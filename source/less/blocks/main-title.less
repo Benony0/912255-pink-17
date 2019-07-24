@@ -1,6 +1,10 @@
 .main-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   margin: 0;
-  padding: 60px 20px;
+  padding: 35px 20px 85px 20px;
 
   font-weight: 300;
   font-size: 24px;
@@ -9,4 +13,21 @@
   text-align: center;
 
   background-color: @color-blue;
+}
+
+.main-title__text {
+  max-width: 280px;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .main-title {
+    padding-top: 80px;
+    padding-bottom: 150px;
+    font-size: 50px;
+  }
+  .main-title__text {
+    max-width: 620px;
+  }
 }

@@ -26,6 +26,7 @@
   <header class="header">
     <div class="header__title">
       <a class="header__logo"><img src="http://placehold.it/150x100" width="75" height="23" alt="PINK"></a>
+      <a class="header__logotablet"><img src="http://placehold.it/150x100" width="150" height="42" alt="PINK"></a>
       <button class="header__button-menu" type="button">
         <span class="header__button-menu_close"></span>
         <span class="header__button-menu_burger hidden"></span>
@@ -49,41 +50,46 @@
 
   <main class="main-page">
 
-    <h1 class="main-title">Фотографии пользователей</h1>
+    <h1 class="main-title">
+      <p class="main-title__text">Фотографии пользователей</p>
+    </h1>
 
     <div class="caption-box">
-      Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+      <div class="caption-box__text">
+        Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+      </div>
     </div>
 
     <section class="gallery">
 
       <h2 class="visually-hidden">Последние фотографии</h2>
 
+
+      <div class="gallery__post gallery__post_panoram">
+        <figure class="gallery__photo-box">
+          <img class="gallery__photo" src="http://placehold.it/150x100" width="" height="" alt="Панорама дня">
+          <div class="gallery__photo-box_panoram">Панорама дня</div>
+        </figure>
+        <div class="gallery__text-box">
+          <div class="post">
+            <p class="post__caption">
+              <span class="post__author">Анна</span>
+              <span class="post__time">(5 минут назад)</span>
+            </p>
+            <p class="post__text">
+              Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
+            </p>
+            <p class="post__likes">
+              <span class="post__like-symbol">&#10084;</span>
+              <span class="post__like-number">Нравится: 215</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
       <ul class="gallery__list list-default">
 
-        <li class="gallery__post">
-          <figure class="gallery__photo-box">
-            <img class="gallery__photo" src="http://placehold.it/150x100" width="" height="" alt="Панорама дня">
-            <div class="gallery__photo-box_panoram">Панорама дня</div>
-          </figure>
-          <div class="gallery__text-box">
-            <div class="post">
-              <p class="post__caption">
-                <span class="post__author">Анна</span>
-                <span class="post__time">(5 минут назад)</span>
-              </p>
-              <p class="post__text">
-                Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
-              </p>
-              <p class="post__likes">
-                <span class="post__like-symbol">&#10084;</span>
-                <span class="post__like-number">Нравится: 215</span>
-              </p>
-            </div>
-          </div>
-        </li>
-
-        <li class="gallery__post">
+        <li class="gallery__post gallery__post_simple">
           <figure class="gallery__photo-box gallery__photo-box_simple">
             <img class="gallery__photo gallery__photo_simple" src="http://placehold.it/150x100" width="" height="" alt="Левон (5 часов назад)">
           </figure>
@@ -104,7 +110,7 @@
           </div>
         </li>
 
-        <li class="gallery__post">
+        <li class="gallery__post gallery__post_simple">
           <figure class="gallery__photo-box gallery__photo-box_simple">
             <img class="gallery__photo gallery__photo_simple" src="http://placehold.it/150x100" width="" height="" alt="Антон (12 часов назад)">
           </figure>
@@ -125,7 +131,7 @@
           </div>
         </li>
 
-        <li class="gallery__post">
+        <li class="gallery__post gallery__post_simple">
           <figure class="gallery__photo-box gallery__photo-box_simple">
             <img class="gallery__photo gallery__photo_simple" src="http://placehold.it/150x100" width="" height="" alt="Борис (20 часов назад)">
           </figure>
@@ -146,7 +152,7 @@
           </div>
         </li>
 
-        <li class="gallery__post">
+        <li class="gallery__post gallery__post_simple">
           <figure class="gallery__photo-box gallery__photo-box_simple">
             <img class="gallery__photo gallery__photo_simple" src="http://placehold.it/150x100" width="" height="" alt="Сергей (25 часов назад)">
           </figure>
@@ -167,7 +173,7 @@
           </div>
         </li>
 
-        <li class="gallery__post">
+        <li class="gallery__post gallery__post_simple">
           <figure class="gallery__photo-box gallery__photo-box_simple">
             <img class="gallery__photo gallery__photo_simple" src="http://placehold.it/150x100" width="" height="" alt="Максим (40 часов назад)">
           </figure>
@@ -188,7 +194,7 @@
           </div>
         </li>
 
-        <li class="gallery__post">
+        <li class="gallery__post gallery__post_simple">
           <figure class="gallery__photo-box gallery__photo-box_simple">
             <img class="gallery__photo gallery__photo_simple" src="http://placehold.it/150x100" width="" height="" alt="Надежда (45 часов назад)">
           </figure>
