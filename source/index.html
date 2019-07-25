@@ -24,28 +24,30 @@
 <body>
 
   <header class="header">
-    <div class="header__title">
-      <a class="header__logo"><img src="http://placehold.it/150x100" width="75" height="23" alt="PINK"></a>
-      <a class="header__logotablet"><img src="http://placehold.it/150x100" width="150" height="42" alt="PINK"></a>
-      <button class="header__button-menu" type="button">
-        <span class="header__button-menu_close"></span>
-        <span class="header__button-menu_burger hidden"></span>
-      </button>
+    <div class="header__container">
+      <div class="header__title">
+        <a class="header__logo"><img src="http://placehold.it/150x100" width="75" height="23" alt="PINK"></a>
+        <a class="header__logotablet"><img src="http://placehold.it/150x100" width="150" height="42" alt="PINK"></a>
+        <button class="header__button-menu" type="button">
+          <span class="header__button-menu_close"></span>
+          <span class="header__button-menu_burger hidden"></span>
+        </button>
+      </div>
+      <ul class="header__menu-list list-default">
+        <li class="header__menu-item">
+          <a class="header__menu-link">Главная</a>
+        </li>
+        <li class="header__menu-item">
+          <a class="header__menu-link" href="photo.html">Фотографии</a>
+        </li>
+        <li class="header__menu-item">
+          <a class="header__menu-link" href="contest.html">Конкурс</a>
+        </li>
+        <li class="header__menu-item">
+          <a class="header__menu-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </li>
+      </ul>
     </div>
-    <ul class="header__menu-list list-default">
-      <li class="header__menu-item">
-        <a class="header__menu-link">Главная</a>
-      </li>
-      <li class="header__menu-item">
-        <a class="header__menu-link" href="photo.html">Фотографии</a>
-      </li>
-      <li class="header__menu-item">
-        <a class="header__menu-link" href="contest.html">Конкурс</a>
-      </li>
-      <li class="header__menu-item">
-        <a class="header__menu-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      </li>
-    </ul>
   </header>
 
   <main class="main-page">
@@ -105,15 +107,15 @@
       <h2 class="visually-hidden">Наши преимущества</h2>
       <ul class="profits__items list-default">
         <li class="profits__item">
-          <h2 class="profits__title">Поднимает настроение</h2>
+          <h3 class="profits__title">Поднимает настроение</h3>
           <p class="profits__text-box">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
         </li>
         <li class="profits__item">
-          <h2 class="profits__title">Меняет мир вокруг</h2>
+          <h3 class="profits__title">Меняет мир вокруг</h3>
           <p class="profits__text-box">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
         </li>
         <li class="profits__item">
-          <h2 class="profits__title">Заводит новых друзей</h2>
+          <h3 class="profits__title">Заводит новых друзей</h3>
           <p class="profits__text-box">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
         </li>
       </ul>
@@ -122,6 +124,21 @@
       </div>
 
     </section>
+
+    <div class="effect">
+
+      <div class="effect__content">
+        <img class="effect__picture" src="http://placehold.it/150x100" width="240" height="275" alt="Эффект 24 часа">
+        <div class="effect__text-box">
+          <h2 class="effect__title">Эффект на 24 часа</h2>
+          <p class="effect__text">
+            Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
+          </p>
+          <a href="#" class="effect__link">Узнать больше об исследовании</a>
+        </div>
+      </div>
+
+    </div>
 
     <!-- TODO: Отзывы, тарифы, контакты -->
     <section class="recall">
@@ -141,7 +158,36 @@
 
   </main>
 
-  <!-- <img class="" src="" width="" height="" alt=""> -->
+  <footer class="footer footer_light footer_main">
+
+    <div class="footer__button">
+      <a class="footer__logo" href="index.html"><img src="http://placehold.it/150x100" width="148" height="40" alt="PINK"></a>
+    </div>
+
+    <div class="footer__links">
+      <ul class="icons list-default">
+        <li class="icons__item">
+          <a class="button button_icon button_light btn-social-twitter" href="#"><img src="http://placehold.it/150x100" width="50" height="50" alt="Twitter"></a>
+        </li>
+        <li class="icons__item">
+          <a class="button button_icon button_light btn-social-facebook" href="#"><img src="http://placehold.it/150x100" width="50" height="50" alt="Facebook"></a>
+        </li>
+        <li class="icons__item">
+          <a class="button button_icon button_light btn-social-youtube" href="#"><img src="http://placehold.it/150x100" width="50" height="50" alt="YouTube"></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer__copyright">
+      <p class="footer__developer">
+        <a class="footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive">
+          Разработано
+          <img class="footer__developer-logo" src="http://placehold.it/150x100" width="27" height="34" alt="HTML Academy">
+        </a>
+      </p>
+    </div>
+
+  </footer>
 
   <!-- Формы/попапы  -->
 

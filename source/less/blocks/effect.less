@@ -1,0 +1,54 @@
+.effect {
+  display: none;
+  background-color: @color-white;
+}
+
+.effect__content {
+  display: flex;
+  justify-content: space-between;
+
+  max-width: @tablet-width-content;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.effect__picture {
+  display: block;
+
+  width: 240px;
+  height: 275px;
+}
+
+.effect__text-box {
+  width: 310px;
+  margin-top: 40px;
+
+  font-size: 14px;
+  line-height: 1.7;
+  color: @color-blue;
+}
+
+.effect__title {
+  margin: 0;
+  padding: 0;
+
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 1.2;
+  color: @color-black;
+}
+
+.effect__text {
+  margin: 0;
+  padding: 20px 0;
+}
+
+.effect__link {
+  color: @color-red;
+}
+
+@media (min-width: @tablet-width) {
+  .effect {
+    display: block;
+  }
+}

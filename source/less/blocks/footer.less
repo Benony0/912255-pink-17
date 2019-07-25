@@ -20,6 +20,10 @@
     color: @color-white;
     background-color: @color-blue;
   }
+
+  &_main {
+    display: none;
+  }
 }
 
 .footer__button,
@@ -43,7 +47,17 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
     max-width: 620px;
+
+    &_main {
+      display: flex;
+      max-width: 660px;
+    }
+  }
+
+  .footer__button,
+  .footer__copyright,
+  .footer__links {
+    max-width: 300px;
   }
 }
