@@ -24,7 +24,7 @@
 .combo-box__title {
   display: none;
 
-  max-width: 280px;
+  max-width: @mobile-width-content;
   padding-top: 100px;
   padding-bottom: 40px;
 
@@ -35,7 +35,7 @@
 .combo-box__button,
 .combo-box__notation,
 .combo-box__links {
-  max-width: 280px;
+  max-width: @mobile-width-content;
   padding: 15px 20px;
 }
 
@@ -52,5 +52,11 @@
   .combo-box__notation,
   .combo-box__links {
     max-width: 300px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .combo-box {
+    padding-left: 130px;
   }
 }

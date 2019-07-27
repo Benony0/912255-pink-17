@@ -13,7 +13,7 @@
 }
 
 .leads__items {
-  max-width: 280px;
+  max-width: @mobile-width-content;
 }
 
 .leads__item {
@@ -32,12 +32,23 @@
 }
 
   .leads__items {
-    max-width: 620px;
+    max-width: @tablet-width-content;
     padding-top: 55px;
     padding-bottom: 45px;
   }
 
   .leads__item {
     padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .leads {
+    font-size: 50px;
+    line-height: 1.2;
+  }
+
+  .leads__items {
+    max-width: @desktop-width-content;
   }
 }
