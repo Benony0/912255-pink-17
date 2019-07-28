@@ -7,8 +7,6 @@
   display: flex;
   justify-content: space-between;
 
-  max-width: @tablet-width-content;
-  margin: 0 auto;
   padding: 60px 20px;
 }
 
@@ -47,15 +45,15 @@
   color: @color-red;
 }
 
-@media (min-width: @tablet-width) {
+@media (min-width: @tablet-min) and (max-width: @tablet-max) {
   .effect {
     display: block;
   }
 }
 
-@media (min-width: @desktop-width) {
-  .effect__content {
-    max-width: @desktop-width-content;
+@media (min-width: @desktop-min) {
+  .effect {
+    display: block;
   }
 
   .effect__picture {

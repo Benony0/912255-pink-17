@@ -50,7 +50,7 @@
     </div>
   </header>
 
-  <main class="main-page">
+  <main>
 
     <h1 class="main-title visually-hidden">Добро пожаловать в PINK</h1>
 
@@ -59,7 +59,7 @@
       <div class="welcome__picture">
       </div>
 
-      <section class="support combo-box combo-box_dark">
+      <section class="combo-box ones-grid combo-box_dark">
 
         <h2 class="visually-hidden">Поддержка</h2>
 
@@ -68,7 +68,9 @@
         </div>
 
         <div class="combo-box__button">
-          <button class="button button_circle button_dark button_nonbk btn-download">Скачать приложение</button>
+          <a class="button button_circle button_dark button_nonbk btn-download" href="https://www.apple.com/ru/itunes/">
+            Скачать приложение
+          </a>
         </div>
 
         <div class="combo-box__links">
@@ -86,9 +88,7 @@
         </div>
 
         <div class="combo-box__notation">
-          <p class="support__notation">
-            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-          </p>
+          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
         </div>
 
       </section>
@@ -96,7 +96,7 @@
     </div>
 
     <div class="leads">
-      <ul class="leads__items list-default">
+      <ul class="leads__items container ones-grid list-default">
         <li class="leads__item">Устали от серости мегаполиса?</li>
         <li class="leads__item">Нам есть, что вам предложить!</li>
       </ul>
@@ -104,39 +104,43 @@
 
     <section class="profits">
 
-      <h2 class="visually-hidden">Наши преимущества</h2>
-      <ul class="profits__items list-default">
-        <li class="profits__item">
-          <div class="profits__picture-box">
-            <img class="profits__picture" src="http://placehold.it/150x100" width="185" height="300" alt="Поднимает настроение">
-          </div>
-          <h3 class="profits__title">Поднимает настроение</h3>
-          <p class="profits__text-box">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-        </li>
-        <li class="profits__item">
-          <div class="profits__picture-box">
-            <img class="profits__picture" src="http://placehold.it/150x100" width="185" height="300" alt="Меняет мир вокруг">
-          </div>
-          <h3 class="profits__title">Меняет мир вокруг</h3>
-          <p class="profits__text-box">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-        </li>
-        <li class="profits__item">
-          <div class="profits__picture-box">
-            <img class="profits__picture" src="http://placehold.it/150x100" width="185" height="300" alt="Заводит новых друзей">
-          </div>
-          <h3 class="profits__title">Заводит новых друзей</h3>
-          <p class="profits__text-box">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-        </li>
-      </ul>
-      <div class="profits__footer">
-        <img class="profits__picture" src="http://placehold.it/150x100" width="160" height="275" alt="Всем привет!">
+      <div class="profits__content container ones-grid ">
+
+        <h2 class="visually-hidden">Наши преимущества</h2>
+        <ul class="profits__items list-default">
+          <li class="profits__item">
+            <div class="profits__picture-box">
+              <img class="profits__picture" src="http://placehold.it/150x100" width="185" height="300" alt="Поднимает настроение">
+            </div>
+            <h3 class="profits__title">Поднимает настроение</h3>
+            <p class="profits__text-box">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="profits__item">
+            <div class="profits__picture-box">
+              <img class="profits__picture" src="http://placehold.it/150x100" width="185" height="300" alt="Меняет мир вокруг">
+            </div>
+            <h3 class="profits__title">Меняет мир вокруг</h3>
+            <p class="profits__text-box">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="profits__item">
+            <div class="profits__picture-box">
+              <img class="profits__picture" src="http://placehold.it/150x100" width="185" height="300" alt="Заводит новых друзей">
+            </div>
+            <h3 class="profits__title">Заводит новых друзей</h3>
+            <p class="profits__text-box">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+        <div class="profits__footer">
+          <img class="profits__picture" src="http://placehold.it/150x100" width="160" height="275" alt="Всем привет!">
+        </div>
+
       </div>
 
     </section>
 
     <div class="effect">
 
-      <div class="effect__content">
+      <div class="effect__content container">
         <img class="effect__picture" src="http://placehold.it/150x100" width="240" height="275" alt="Эффект 24 часа">
         <div class="effect__text-box">
           <h2 class="effect__title">Эффект на 24 часа</h2>
@@ -151,6 +155,7 @@
 
     <!-- TODO: Отзывы, тарифы, контакты -->
     <section class="recall">
+
       <h2 class="visually-hidden">Отзывы</h2>
 
     </section>
@@ -167,7 +172,7 @@
 
   </main>
 
-  <footer class="footer footer_light footer_main">
+  <footer class="footer ones-grid footer_hidden-mobile">
 
     <div class="footer__button">
       <a class="footer__logo" href="index.html"><img src="http://placehold.it/150x100" width="148" height="40" alt="PINK"></a>

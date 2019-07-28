@@ -1,8 +1,4 @@
 .main-title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
   margin: 0;
   padding: 35px 20px 85px 20px;
 
@@ -16,25 +12,14 @@
 }
 
 .main-title__text {
-  max-width: @mobile-width-content;
-  margin: 0;
   padding: 0;
 }
 
-@media (min-width: @tablet-width) {
+@media (min-width: @tablet-min) {
   .main-title {
     padding-top: 75px;
     padding-bottom: 115px;
+
     font-size: 50px;
-  }
-
-  .main-title__text {
-    max-width: @tablet-width-content;
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .main-title__text {
-    max-width: @desktop-width-content;
   }
 }

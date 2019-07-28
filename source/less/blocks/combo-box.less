@@ -1,8 +1,4 @@
 .combo-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
   padding: 15px 20px;
 
   font-weight: 300;
@@ -39,7 +35,7 @@
   padding: 15px 20px;
 }
 
-@media (min-width: @tablet-width) {
+@media (min-width: @tablet-min) and (max-width: @tablet-max) {
   .combo-box {
     background: none;
   }
@@ -55,8 +51,19 @@
   }
 }
 
-@media (min-width: @tablet-width) {
+@media (min-width: @desktop-min) {
   .combo-box {
     padding-left: 130px;
+    background: none;
+  }
+
+  .combo-box__title {
+    display: block;
+  }
+
+  .combo-box__button,
+  .combo-box__notation,
+  .combo-box__links {
+    max-width: 300px;
   }
 }
