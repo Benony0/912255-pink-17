@@ -1,6 +1,4 @@
 .caption-box {
-  padding: 46px 20px 51px 20px;
-
   font-size: 14px;
   line-height: 2.1;
   color: @color-blue;
@@ -9,10 +7,17 @@
   background-color: @color-white;
 }
 
+.caption-box__text {
+  margin: 45px 20px;
+}
+
 @media (min-width: @tablet-min) {
   .caption-box {
-    padding: 100px 20px 80px 20px;
     font-size: 18px;
     line-height: 1.7;
+  }
+
+  .caption-box__text {
+    margin: 80px 20px;
   }
 }
