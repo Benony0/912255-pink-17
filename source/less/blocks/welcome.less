@@ -1,8 +1,33 @@
 .welcome {
+  display: flex;
+  flex-direction: column;
   min-height: 395px;
 
   background-color: @color-blue;
+}
+
+.welcome__picture {
+  min-height: 395px;
+
   background-image: url("http://placehold.it/150x100");
   background-repeat: no-repeat;
   background-size: 100%;
+}
+
+@media (min-width: @tablet-min) {
+  .welcome {
+    flex-direction: row;
+
+    min-height: 620px;
+
+    background-image: url("http://placehold.it/150x100");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .welcome__picture {
+    min-height: 620px;
+
+    background-image: none;
+  }
 }

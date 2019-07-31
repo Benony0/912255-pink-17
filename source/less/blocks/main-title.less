@@ -1,6 +1,6 @@
 .main-title {
   margin: 0;
-  padding: 60px 20px;
+  padding: 35px 20px 85px 20px;
 
   font-weight: 300;
   font-size: 24px;
@@ -9,4 +9,17 @@
   text-align: center;
 
   background-color: @color-blue;
+}
+
+.main-title__text {
+  padding: 0;
+}
+
+@media (min-width: @tablet-min) {
+  .main-title {
+    padding-top: 75px;
+    padding-bottom: 115px;
+
+    font-size: 50px;
+  }
 }

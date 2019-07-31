@@ -1,5 +1,5 @@
 .combo-box {
-  padding-top: 15px;
+  padding: 15px 20px;
 
   font-weight: 300;
   font-size: 14px;
@@ -17,17 +17,53 @@
   }
 }
 
-.combo-box__links {
-  padding: 15px 20px;
+.combo-box__title {
+  display: none;
+
+  max-width: @mobile-width-content;
+  padding-top: 100px;
+  padding-bottom: 40px;
+
+  font-size: 40px;
+  line-height: 1;
 }
 
 .combo-box__button,
 .combo-box__notation,
-.combo-box__copyright {
+.combo-box__links {
+  max-width: @mobile-width-content;
   padding: 15px 20px;
 }
 
-.combo-box__copyright {
-  font-weight: normal;
-  line-height: 1.3;
+@media (min-width: @tablet-min) and (max-width: @tablet-max) {
+  .combo-box {
+    background: none;
+  }
+
+  .combo-box__title {
+    display: block;
+  }
+
+  .combo-box__button,
+  .combo-box__notation,
+  .combo-box__links {
+    max-width: 300px;
+  }
+}
+
+@media (min-width: @desktop-min) {
+  .combo-box {
+    padding-left: 130px;
+    background: none;
+  }
+
+  .combo-box__title {
+    display: block;
+  }
+
+  .combo-box__button,
+  .combo-box__notation,
+  .combo-box__links {
+    max-width: 300px;
+  }
 }

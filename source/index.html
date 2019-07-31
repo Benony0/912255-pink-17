@@ -15,77 +15,83 @@
     <!-- Собственные стили -->
     <link href="css/style.css" rel="stylesheet">
     <!-- <link href="css/min_style.css" rel="stylesheet"> -->
-    <!-- Подключение шрифтов -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=cyrillic" rel="stylesheet">
-
-    <!-- <link rel="shortcut icon" type="image/x-icon" href="img/logo16.png">или другой путь -->
-
 </head>
 <body>
 
   <header class="header">
-    <div class="header__title">
-      <a class="header__logo"><img src="http://placehold.it/150x100" width="75" height="23" alt="PINK"></a>
-      <button class="header__button-menu" type="button">
-        <span class="header__button-menu_close"></span>
-        <span class="header__button-menu_burger hidden"></span>
-      </button>
+    <div class="header__container">
+      <div class="header__title">
+        <a class="header__logo"><img src="http://placehold.it/150x100" width="75" height="23" alt="PINK"></a>
+        <a class="header__logotablet"><img src="http://placehold.it/150x100" width="150" height="42" alt="PINK"></a>
+        <button class="header__button-menu" type="button">
+          <span class="header__button-menu_close"></span>
+          <span class="header__button-menu_burger hidden"></span>
+        </button>
+      </div>
+      <ul class="header__menu-list list-default">
+        <li class="header__menu-item">
+          <a class="header__menu-link">Главная</a>
+        </li>
+        <li class="header__menu-item">
+          <a class="header__menu-link" href="photo.html">Фотографии</a>
+        </li>
+        <li class="header__menu-item">
+          <a class="header__menu-link" href="contest.html">Конкурс</a>
+        </li>
+        <li class="header__menu-item">
+          <a class="header__menu-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </li>
+      </ul>
     </div>
-    <ul class="header__menu-list list-default">
-      <li class="header__menu-item">
-        <a class="header__menu-link">Главная</a>
-      </li>
-      <li class="header__menu-item">
-        <a class="header__menu-link" href="photo.html">Фотографии</a>
-      </li>
-      <li class="header__menu-item">
-        <a class="header__menu-link" href="contest.html">Конкурс</a>
-      </li>
-      <li class="header__menu-item">
-        <a class="header__menu-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      </li>
-    </ul>
   </header>
 
-  <main class="main-page">
+  <main>
 
     <h1 class="main-title visually-hidden">Добро пожаловать в PINK</h1>
 
     <div class="welcome">
+
+      <div class="welcome__picture">
+      </div>
+
+      <section class="combo-box ones-grid combo-box_dark">
+
+        <h2 class="visually-hidden">Поддержка</h2>
+
+        <div class="combo-box__title">
+          Взгляните на жизнь иначе!
+        </div>
+
+        <div class="combo-box__button">
+          <a class="button button_circle button_dark button_nonbk btn-download" href="https://www.apple.com/ru/itunes/">
+            Скачать приложение
+          </a>
+        </div>
+
+        <div class="combo-box__links">
+          <ul class="icons list-default">
+            <li class="icons__item">
+              <a class="button button_icon btn-os-apple" href="https://www.apple.com/ru/itunes/"><img src="http://placehold.it/150x100" width="50" height="50" alt="Apple"></a>
+            </li>
+            <li class="icons__item">
+              <a class="button button_icon btn-os-android" href="https://play.google.com/store?hl=ru"><img src="http://placehold.it/150x100" width="50" height="50" alt="Android"></a>
+            </li>
+            <li class="icons__item">
+              <a class="button button_icon btn-os-windows" href="https://www.microsoft.com/ru-ru/store/apps/windows"><img src="http://placehold.it/150x100" width="50" height="50" alt="Windows"></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="combo-box__notation">
+          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+        </div>
+
+      </section>
+
     </div>
 
-    <section class="support combo-box combo-box_dark">
-
-      <h2 class="visually-hidden">Поддержка</h2>
-
-      <div class="combo-box__button">
-        <button class="button button_circle button_dark btn-download">Скачать приложение</button>
-      </div>
-
-      <div class="combo-box__links">
-        <ul class="icons list-default">
-          <li class="icons__item">
-            <a class="button button_icon btn-os-apple" href="https://www.apple.com/ru/itunes/"><img src="http://placehold.it/150x100" width="50" height="50" alt="Apple"></a>
-          </li>
-          <li class="icons__item">
-            <a class="button button_icon btn-os-android" href="https://play.google.com/store?hl=ru"><img src="http://placehold.it/150x100" width="50" height="50" alt="Android"></a>
-          </li>
-          <li class="icons__item">
-            <a class="button button_icon btn-os-windows" href="https://www.microsoft.com/ru-ru/store/apps/windows"><img src="http://placehold.it/150x100" width="50" height="50" alt="Windows"></a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="combo-box__notation">
-        <p class="support__notation">
-          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-        </p>
-      </div>
-
-    </section>
-
     <div class="leads">
-      <ul class="leads__items list-default">
+      <ul class="leads__items container ones-grid list-default">
         <li class="leads__item">Устали от серости мегаполиса?</li>
         <li class="leads__item">Нам есть, что вам предложить!</li>
       </ul>
@@ -93,29 +99,58 @@
 
     <section class="profits">
 
-      <h2 class="visually-hidden">Наши преимущества</h2>
-      <ul class="profits__items list-default">
-        <li class="profits__item">
-          <h2 class="profits__title">Поднимает настроение</h2>
-          <p class="profits__text-box">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-        </li>
-        <li class="profits__item">
-          <h2 class="profits__title">Меняет мир вокруг</h2>
-          <p class="profits__text-box">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-        </li>
-        <li class="profits__item">
-          <h2 class="profits__title">Заводит новых друзей</h2>
-          <p class="profits__text-box">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-        </li>
-      </ul>
-      <div class="profits__footer">
-          <img class="profits__picture" src="http://placehold.it/150x100" width="156" height="278" alt="Всем привет!">
+      <div class="profits__content container ones-grid ">
+
+        <h2 class="visually-hidden">Наши преимущества</h2>
+        <ul class="profits__items list-default">
+          <li class="profits__item">
+            <div class="profits__picture-box">
+              <img class="profits__picture" src="http://placehold.it/150x100" width="185" height="300" alt="Поднимает настроение">
+            </div>
+            <h3 class="profits__title">Поднимает настроение</h3>
+            <p class="profits__text-box">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="profits__item">
+            <div class="profits__picture-box">
+              <img class="profits__picture" src="http://placehold.it/150x100" width="185" height="300" alt="Меняет мир вокруг">
+            </div>
+            <h3 class="profits__title">Меняет мир вокруг</h3>
+            <p class="profits__text-box">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="profits__item">
+            <div class="profits__picture-box">
+              <img class="profits__picture" src="http://placehold.it/150x100" width="185" height="300" alt="Заводит новых друзей">
+            </div>
+            <h3 class="profits__title">Заводит новых друзей</h3>
+            <p class="profits__text-box">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+        <div class="profits__footer">
+          <img class="profits__picture" src="http://placehold.it/150x100" width="160" height="275" alt="Всем привет!">
+        </div>
+
       </div>
 
     </section>
 
+    <div class="effect">
+
+      <div class="effect__content container">
+        <img class="effect__picture" src="http://placehold.it/150x100" width="240" height="275" alt="Эффект 24 часа">
+        <div class="effect__text-box">
+          <h2 class="effect__title">Эффект на 24 часа</h2>
+          <p class="effect__text">
+            Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
+          </p>
+          <a href="#" class="effect__link">Узнать больше об исследовании</a>
+        </div>
+      </div>
+
+    </div>
+
     <!-- TODO: Отзывы, тарифы, контакты -->
     <section class="recall">
+
       <h2 class="visually-hidden">Отзывы</h2>
 
     </section>
@@ -132,7 +167,36 @@
 
   </main>
 
-  <!-- <img class="" src="" width="" height="" alt=""> -->
+  <footer class="footer ones-grid footer_hidden-mobile">
+
+    <div class="footer__button">
+      <a class="footer__logo" href="index.html"><img src="http://placehold.it/150x100" width="148" height="40" alt="PINK"></a>
+    </div>
+
+    <div class="footer__links">
+      <ul class="icons list-default">
+        <li class="icons__item">
+          <a class="button button_icon button_light btn-social-twitter" href="#"><img src="http://placehold.it/150x100" width="50" height="50" alt="Twitter"></a>
+        </li>
+        <li class="icons__item">
+          <a class="button button_icon button_light btn-social-facebook" href="#"><img src="http://placehold.it/150x100" width="50" height="50" alt="Facebook"></a>
+        </li>
+        <li class="icons__item">
+          <a class="button button_icon button_light btn-social-youtube" href="#"><img src="http://placehold.it/150x100" width="50" height="50" alt="YouTube"></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer__copyright">
+      <p class="footer__developer">
+        <a class="footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive">
+          Разработано
+          <img class="footer__developer-logo" src="http://placehold.it/150x100" width="27" height="34" alt="HTML Academy">
+        </a>
+      </p>
+    </div>
+
+  </footer>
 
   <!-- Формы/попапы  -->
 

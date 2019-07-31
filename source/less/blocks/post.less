@@ -1,4 +1,9 @@
 .post {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+
   padding: 23px 18px;
   font-size: 14px;
   line-height: 1.7;
@@ -7,9 +12,22 @@
   background-color: @color-grey;
 }
 
-.post__caption {
+.post__caption,
+.post__text,
+.post__likes {
+  display: block;
   padding: 0;
   margin: 0;
+}
+
+.post__text {
+  flex-grow: 1;
+  margin-bottom: 10px;
+}
+
+.post__likes {
+  color: @color-red;
+  text-transform: uppercase;
 }
 
 .post__author {
@@ -21,24 +39,10 @@
   text-transform: uppercase;
 }
 
-.post__text {
-  padding: 0;
-  padding-bottom: 10px;
-  margin: 0;
-}
-
-.post__likes {
-  padding: 0;
-  margin: 0;
-
-  color: @color-red;
-  text-transform: uppercase;
-}
-
-.post__like-symbol {
-  border: none;
-}
-
-.post__like-number {
-  border: none;
+@media (min-width: @tablet-min) {
+  .post__likes {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
 }

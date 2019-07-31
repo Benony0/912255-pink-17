@@ -15,57 +15,63 @@
   <!-- Собственные стили -->
   <link href="css/style.css" rel="stylesheet">
   <!-- <link href="css/min_style.css" rel="stylesheet"> -->
-  <!-- Подключение шрифтов -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=cyrillic" rel="stylesheet">
-
-  <!-- <link rel="shortcut icon" type="image/x-icon" href="img/logo16.png">или другой путь -->
-
 </head>
 <body>
 
   <header class="header">
-    <div class="header__title">
-      <a class="header__logo"><img src="http://placehold.it/150x100" width="75" height="23" alt="PINK"></a>
-      <button class="header__button-menu" type="button">
-        <span class="header__button-menu_close"></span>
-        <span class="header__button-menu_burger hidden"></span>
-      </button>
+    <div class="header__container">
+      <div class="header__title">
+        <a class="header__logo"><img src="http://placehold.it/150x100" width="75" height="23" alt="PINK"></a>
+        <a class="header__logotablet"><img src="http://placehold.it/150x100" width="150" height="42" alt="PINK"></a>
+        <button class="header__button-menu" type="button">
+          <span class="header__button-menu_close"></span>
+          <span class="header__button-menu_burger hidden"></span>
+        </button>
+      </div>
+      <ul class="header__menu-list list-default">
+        <li class="header__menu-item">
+          <a class="header__menu-link" href="index.html">Главная</a>
+        </li>
+        <li class="header__menu-item">
+          <a class="header__menu-link">Фотографии</a>
+        </li>
+        <li class="header__menu-item">
+          <a class="header__menu-link" href="contest.html">Конкурс</a>
+        </li>
+        <li class="header__menu-item">
+          <a class="header__menu-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </li>
+      </ul>
     </div>
-    <ul class="header__menu-list list-default">
-      <li class="header__menu-item">
-        <a class="header__menu-link" href="index.html">Главная</a>
-      </li>
-      <li class="header__menu-item">
-        <a class="header__menu-link">Фотографии</a>
-      </li>
-      <li class="header__menu-item">
-        <a class="header__menu-link" href="contest.html">Конкурс</a>
-      </li>
-      <li class="header__menu-item">
-        <a class="header__menu-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      </li>
-    </ul>
   </header>
 
-  <main class="main-page">
+  <main>
 
-    <h1 class="main-title">Фотографии пользователей</h1>
+    <h1 class="main-title ones-grid">
+      <p class="main-title__text container">Фотографии пользователей</p>
+    </h1>
 
     <div class="caption-box">
-      Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+      <div class="container ones-grid">
+        <div class="caption-box__text">
+          Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+        </div>
+      </div>
     </div>
 
     <section class="gallery">
 
       <h2 class="visually-hidden">Последние фотографии</h2>
 
-      <ul class="gallery__list list-default">
 
-        <li class="gallery__post">
-          <figure class="gallery__photo-box">
-            <img class="gallery__photo" src="http://placehold.it/150x100" width="" height="" alt="Панорама дня">
-            <div class="gallery__photo-box_panoram">Панорама дня</div>
-          </figure>
+      <div class="gallery__post gallery__post_panoram">
+
+        <figure class="gallery__photo-box">
+          <img class="gallery__photo" src="http://placehold.it/150x100" width="" height="" alt="Панорама дня">
+          <div class="gallery__photo-box_panoram">Панорама дня</div>
+        </figure>
+
+        <div class="container">
           <div class="gallery__text-box">
             <div class="post">
               <p class="post__caption">
@@ -81,9 +87,13 @@
               </p>
             </div>
           </div>
-        </li>
+        </div>
 
-        <li class="gallery__post">
+      </div>
+
+      <ul class="gallery__list container ones-grid list-default">
+
+        <li class="gallery__post gallery__post_simple">
           <figure class="gallery__photo-box gallery__photo-box_simple">
             <img class="gallery__photo gallery__photo_simple" src="http://placehold.it/150x100" width="" height="" alt="Левон (5 часов назад)">
           </figure>
@@ -104,7 +114,7 @@
           </div>
         </li>
 
-        <li class="gallery__post">
+        <li class="gallery__post gallery__post_simple">
           <figure class="gallery__photo-box gallery__photo-box_simple">
             <img class="gallery__photo gallery__photo_simple" src="http://placehold.it/150x100" width="" height="" alt="Антон (12 часов назад)">
           </figure>
@@ -125,7 +135,7 @@
           </div>
         </li>
 
-        <li class="gallery__post">
+        <li class="gallery__post gallery__post_simple">
           <figure class="gallery__photo-box gallery__photo-box_simple">
             <img class="gallery__photo gallery__photo_simple" src="http://placehold.it/150x100" width="" height="" alt="Борис (20 часов назад)">
           </figure>
@@ -146,7 +156,7 @@
           </div>
         </li>
 
-        <li class="gallery__post">
+        <li class="gallery__post gallery__post_simple">
           <figure class="gallery__photo-box gallery__photo-box_simple">
             <img class="gallery__photo gallery__photo_simple" src="http://placehold.it/150x100" width="" height="" alt="Сергей (25 часов назад)">
           </figure>
@@ -167,7 +177,7 @@
           </div>
         </li>
 
-        <li class="gallery__post">
+        <li class="gallery__post gallery__post_simple">
           <figure class="gallery__photo-box gallery__photo-box_simple">
             <img class="gallery__photo gallery__photo_simple" src="http://placehold.it/150x100" width="" height="" alt="Максим (40 часов назад)">
           </figure>
@@ -188,7 +198,7 @@
           </div>
         </li>
 
-        <li class="gallery__post">
+        <li class="gallery__post gallery__post_simple">
           <figure class="gallery__photo-box gallery__photo-box_simple">
             <img class="gallery__photo gallery__photo_simple" src="http://placehold.it/150x100" width="" height="" alt="Надежда (45 часов назад)">
           </figure>
@@ -220,13 +230,13 @@
 
   </main>
 
-  <footer class="footer combo-box combo-box_light">
+  <footer class="footer ones-grid">
 
-    <div class="combo-box__button">
+    <div class="footer__button">
       <a class="footer__logo" href="index.html"><img src="http://placehold.it/150x100" width="148" height="40" alt="PINK"></a>
     </div>
 
-    <div class="combo-box__links">
+    <div class="footer__links">
       <ul class="icons list-default">
         <li class="icons__item">
           <a class="button button_icon button_light btn-social-twitter" href="#"><img src="http://placehold.it/150x100" width="50" height="50" alt="Twitter"></a>
@@ -240,7 +250,7 @@
       </ul>
     </div>
 
-    <div class="combo-box__copyright">
+    <div class="footer__copyright">
       <p class="footer__developer">
         <a class="footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive">
           Разработано
