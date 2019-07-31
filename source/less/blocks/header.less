@@ -13,9 +13,7 @@
   position: relative;
   min-height: 67px;
 
-  background-color: @color-darkblue;
-  // opacity: 0.3;
-
+  background-color: fade(@color-darkblue, 30%);
   border-bottom: @color-black 1px solid;
 }
 
@@ -38,7 +36,7 @@
   top: 20px;
   left: 20px;
 
-  background-color: @color-darkblue;
+  background-color: fade(@color-darkblue, 30%);
 }
 
 .header__logo-piture {
@@ -178,8 +176,7 @@
     line-height: 1;
     text-transform: none;
 
-    background-color: @color-blue;
-    opacity: 0.3;
+    background-color: fade(@color-darkblue, 30%);
   }
 
   .header__container {
@@ -195,6 +192,8 @@
 
     text-align: left;
     border: none;
+
+    background: none;
   }
 
   .header__logo {
@@ -218,9 +217,14 @@
   .header__menu-link {
     display: block;
     padding: 45px 0;
+    padding-bottom: 10px;
 
     border: none;
     box-shadow: none;
+
+    &_current {
+      border-bottom: 3px solid @color-white;
+    }
   }
 
   .header__menu-list a[href] {

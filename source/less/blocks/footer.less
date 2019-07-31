@@ -19,6 +19,7 @@
 .footer__links {
   max-width: 280px;
   margin: 15px 20px;
+  width: 100%;
 }
 
 .footer__logo-picture {
@@ -33,7 +34,25 @@
 }
 
 .footer__developer-link {
+  display: block;
+  position: relative;
+
+  padding-top: 3px;
+  padding-right: 30px;
+  padding-bottom: 15px;
+
+  font-size: 14px;
+  line-height: 1;
+  color: @color-blue;
   text-decoration: none;
+
+  // border: #f0f 1px dashed;
+}
+
+.footer__developer-logo {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 @media (min-width: @tablet-min) {
@@ -63,5 +82,9 @@
     &_main {
       max-width: @desktop-width-content;
     }
+  }
+
+  .footer__developer-link {
+    font-size: 18px;
   }
 }
