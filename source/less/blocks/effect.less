@@ -11,6 +11,23 @@
   margin-bottom: 60px;
 }
 
+.effect__picture-box {
+  position: relative;
+}
+
+.effect__picture-text {
+  content: "";
+  position: absolute;
+
+  top: 10;
+  left: 10;
+
+  color: @color-red;
+  font-size: 120px;
+  line-height: 1;
+  font-weight: bold;
+}
+
 .effect__picture {
   display: block;
 
@@ -54,6 +71,7 @@
 @media (min-width: @desktop-min) {
   .effect {
     display: block;
+    background-color: @color-grey;
   }
 
   .effect__picture {
