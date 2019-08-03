@@ -4,10 +4,33 @@
 }
 
 .icons__button {
-  border: 3px solid #e9ebec;
+  margin: 0 6px;
+  width: 52px;
+  height: 52px;
+
+  border: 3px solid @color-lightgrey;
   border-radius: 50px;
 }
 
+.icons__svg {
+  margin-top: 17px;
+}
+
+.icons__item:nth-child(3) .icons__svg {
+  margin-top: 18px;
+  margin-left: 5px;
+}
+
+.icons__button:hover,
+.icons__button:focus {
+  border-color: @color-blue;
+}
+
+.icons__button:active {
+  border-color: @color-lightgrey;
+  opacity: 0.3;
+}
+
 .icons__button path {
-  fill: #e9ebec;
+  fill: @color-red;
 }
