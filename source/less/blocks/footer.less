@@ -42,17 +42,22 @@
   padding-bottom: 15px;
 
   font-size: 14px;
-  line-height: 1;
+  line-height: 1.3;
   color: @color-blue;
   text-decoration: none;
-
-  // border: #f0f 1px dashed;
 }
 
 .footer__developer-logo {
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
+  width: 27px;
+  height: 34px;
+}
+
+.footer__developer-logo path {
+  fill: @color-red;
 }
 
 @media (min-width: @tablet-min) {
@@ -67,21 +72,13 @@
       max-width: @tablet-min;
     }
   }
+}
 
+@media (min-width: @desktop-min) {
   .footer__button,
   .footer__copyright,
   .footer__links {
     max-width: 300px;
-  }
-}
-
-@media (min-width: @desktop-min) {
-  .footer {
-    max-width: @desktop-width-content;
-
-    &_main {
-      max-width: @desktop-width-content;
-    }
   }
 
   .footer__developer-link {
