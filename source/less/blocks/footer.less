@@ -24,8 +24,21 @@
 
 .footer__logo-picture {
   display: block;
-  width: 150px;
+  width: 146px;
   height: 40px;
+}
+
+.footer__logo:hover path,
+.footer__logo:focus path {
+  fill: @color-red;
+}
+
+.footer__logo:active path {
+  fill: fade(@color-red, 30%);
+}
+
+.footer__logo:active g path {
+  fill: fade(@color-blue, 30%);
 }
 
 .footer__copyright {
@@ -60,6 +73,15 @@
   fill: @color-red;
 }
 
+.footer__developer-link:hover path,
+.footer__developer-link:focus path {
+  fill: @color-blue;
+}
+
+.footer__developer-link:active path {
+  fill: fade(@color-blue, 30%);
+}
+
 @media (min-width: @tablet-min) {
   .footer {
     display: flex;
@@ -72,13 +94,21 @@
       max-width: @tablet-min;
     }
   }
-}
 
-@media (min-width: @desktop-min) {
   .footer__button,
   .footer__copyright,
   .footer__links {
     max-width: 300px;
+  }
+}
+
+@media (min-width: @desktop-min) {
+  .footer {
+    max-width: @desktop-width-content;
+
+    &_main {
+      max-width: @desktop-width-content;
+    }
   }
 
   .footer__developer-link {
