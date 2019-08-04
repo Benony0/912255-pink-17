@@ -1,13 +1,15 @@
 .profits {
   padding: 0 20px;
+  padding-top: 100px;
 
   font-weight: normal;
-  font-size: 14px;
-  line-height: 1.7;
   text-align: center;
-  color: @color-blue;
 
   background-color: @color-grey;
+
+  background-image: url("../../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  // background-size: 100vw 94px;
 }
 
 .profits__items {
@@ -41,6 +43,10 @@
 }
 
 @media (min-width: @tablet-min) {
+  .profits {
+    padding-top: 50px;
+  }
+
   .profits__content {
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -93,8 +99,8 @@
   }
 
   .profits__picture {
-    width: 185px;
-    height: 300px;
+    width: 2800px;
+    height: 305px;
   }
 
   .profits__title {
@@ -105,11 +111,13 @@
 
     font-size: 30px;
     line-height: 1.2;
+    text-align: center;
   }
 
   .profits__text-box {
     width: 240px;
     font-size: 18px;
     line-height: 1.6;
+    text-align: center;
   }
 }

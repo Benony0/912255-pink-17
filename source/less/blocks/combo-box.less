@@ -2,18 +2,11 @@
   padding: 15px 20px;
 
   font-weight: 300;
-  font-size: 14px;
-  line-height: 1.7;
   text-align: center;
-
-  &_light {
-    color: @color-blue;
-    background-color: @color-white;
-  }
 
   &_dark {
     color: @color-white;
-    background-color: @color-blue;
+    background-color: @color-darkblue;
   }
 }
 
@@ -33,6 +26,7 @@
 .combo-box__links {
   max-width: @mobile-width-content;
   padding: 15px 20px;
+  width: 100%;
 }
 
 @media (min-width: @tablet-min) and (max-width: @tablet-max) {

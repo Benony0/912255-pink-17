@@ -7,8 +7,25 @@
   display: flex;
   justify-content: space-between;
 
-  margin-top: 60px;
-  margin-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.effect__picture-box {
+  position: relative;
+}
+
+.effect__picture-text {
+  content: "";
+  position: absolute;
+
+  top: 37%;
+  left: 27%;
+
+  color: @color-red;
+  font-size: 96px;
+  line-height: 1;
+  font-weight: bold;
 }
 
 .effect__picture {
@@ -54,6 +71,7 @@
 @media (min-width: @desktop-min) {
   .effect {
     display: block;
+    background-color: @color-grey;
   }
 
   .effect__picture {
@@ -64,5 +82,11 @@
   .effect__text-box {
     width: 570px;
     font-size: 18px;
+  }
+
+  .effect__picture-text {
+    // top: 37%;
+    // left: 27%;
+    font-size: 120px;
   }
 }
