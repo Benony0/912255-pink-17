@@ -12,7 +12,15 @@
   margin: 0;
   padding: 0;
 
-  &_panoram {
+  width: 100%;
+  overflow: hidden;
+
+  &_simple {
+    display: block;
+    overflow: hidden;
+  }
+
+  &_tag {
     display: block;
     position: absolute;
     right: 20px;
@@ -33,10 +41,13 @@
 
 .gallery__photo {
   display: block;
+  width: 100%;
+  height: auto;
 
   &_simple {
-    width: calc(100% - 40px);
-  }
+    width: 100%;
+    height: auto;
+    }
 }
 
 .gallery__text-box {
@@ -46,48 +57,26 @@
 
 @media (max-width: @mobile-max) {
   .gallery__photo-box {
-    width: 100%;
-    min-height: 140px;
-    overflow: hidden;
+    &_panoram {
+      min-height: 140px;
+    }
 
     &_simple {
       width: 280px;
       height: 180px;
-      overflow: hidden;
-    }
-  }
-
-  .gallery__photo {
-    width: 100%;
-    height: auto;
-
-    &_simple {
-      width: auto;
-      height: 100%;
     }
   }
 }
 
 @media (min-width: @tablet-min) and (max-width: @tablet-max) {
   .gallery__photo-box {
-    width: 100%;
-    min-height: 510px;
-    overflow: hidden;
+    &_panoram {
+      min-height: 300px;
+    }
 
     &_simple {
       width: 300px;
       height: 300px;
-      overflow: hidden;
-    }
-  }
-
-  .gallery__photo {
-    width: 100%;
-    height: auto;
-
-    &_simple {
-      width: auto;
-      height: 100%;
     }
   }
 }
@@ -112,7 +101,7 @@
   }
 
   .gallery__photo-box {
-    &_panoram {
+    &_tag {
       top: 55px;
     }
   }
@@ -124,24 +113,13 @@
 
 @media (min-width: @desktop-min) {
   .gallery__photo-box {
-    width: 100%;
-    min-height: 505px;
-    overflow: hidden;
+    &_panoram {
+      min-height: 505px;
+    }
 
     &_simple {
       width: 300px;
       height: 400px;
-      overflow: hidden;
-    }
-  }
-
-  .gallery__photo {
-    width: 100%;
-    height: auto;
-
-    &_simple {
-      width: auto;
-      height: 100%;
     }
   }
 
