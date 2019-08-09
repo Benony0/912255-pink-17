@@ -16,10 +16,15 @@
   padding-bottom: 0;
 }
 
+@media (max-width: @mobile-max) {
+  .leads__items {
+    margin-top: 20px;
+  }
+}
+
 @media (min-width: @tablet-min) {
   .leads {
     font-size: 40px;
-    line-height: 1.2;
   }
 
   .leads__items {
@@ -30,11 +35,14 @@
   .leads__item {
     padding: 0;
   }
+
+  .leads__item:last-child {
+    width: 450px;
+  }
 }
 
 @media (min-width: @desktop-min) {
   .leads {
     font-size: 50px;
-    line-height: 1.2;
   }
 }
