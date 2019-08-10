@@ -1,1 +1,42 @@
-// Блок Отзывы
+.recall {
+  text-align: center;
+}
+
+@media (max-width: @mobile-max) {
+  .recall__author {
+    order: 1;
+    margin-top: 40px;
+  }
+
+  .recall__text {
+    order: 2;
+  }
+
+  .recall__paginator {
+    order: 3;
+  }
+
+  .recall__picture-box,
+  .recall__caption,
+  .recall__batton-left,
+  .recall__batton-right {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-min) and (max-width: @tablet-max) {
+  .recall__picture-box {
+    display: none;
+  }
+
+  .recall__batton-left,
+  .recall__batton-right {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-min) {
+  .recall__paginator {
+    display: none;
+  }
+}

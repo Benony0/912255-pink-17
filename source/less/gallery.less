@@ -3,6 +3,7 @@
 }
 
 .gallery__post {
+  margin-top: -7px;
   margin-bottom: 20px;
 }
 
@@ -89,6 +90,9 @@
   }
 
   .gallery__post {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     flex-grow: 1;
 
     &_panoram {
@@ -107,7 +111,12 @@
   }
 
   .gallery__text-box {
+    flex-grow: 1;
     min-height: 155px;
+
+    &_panoram {
+      min-height: unset;
+    }
   }
 }
 
