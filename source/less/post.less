@@ -5,9 +5,6 @@
   flex-grow: 1;
 
   padding: 23px 18px;
-  font-size: 14px;
-  line-height: 1.7;
-  color: @color-blue;
 
   background-color: @color-grey;
 }
@@ -16,12 +13,14 @@
 .post__text,
 .post__likes {
   display: block;
-  padding: 0;
+
   margin: 0;
+  padding: 0;
 }
 
 .post__text {
   flex-grow: 1;
+
   margin-bottom: 10px;
 }
 
@@ -35,11 +34,33 @@
 }
 
 .post__time {
+  font-size: 12px;
+  line-height: 2;
   font-weight: 300;
+  color: @color-blue;
   text-transform: uppercase;
 }
 
 @media (min-width: @tablet-min) {
+  .post_panoram {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .post__caption_panoram {
+    order: 1;
+  }
+
+  .post__text_panoram {
+    order: 3;
+  }
+
+  .post__likes_panoram {
+    order: 2;
+    flex-basis: 125px;
+  }
+
   .post__likes {
     display: flex;
     flex-direction: row-reverse;

@@ -1,8 +1,35 @@
 // ////////////////////////////
 // Глобальные
 // ////////////////////////////
+html {
+  height: 100%;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+
   font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  color: @color-blue;
+
+  background-color: @color-white;
+}
+
+main {
+  flex-grow: 1;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 // ////////////////////////////
@@ -32,43 +59,4 @@ body {
 
 .hidden {
   display: none;
-}
-
-// ////////////////////////////
-// Кнопки
-// ////////////////////////////
-.button {
-  display: inline-block;
-  padding: 15px 30px;
-
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 1;
-  text-align: center;
-  vertical-align: middle;
-  text-decoration: none;
-
-  &_circle {
-    border: 3px solid @color-white;
-    border-radius: 50px;
-  }
-
-  &_dark {
-    color: @color-white;
-    background-color: @color-blue;
-  }
-
-  &_light {
-    color: @color-blue;
-    background-color: @color-white;
-  }
-
-  &_icon {
-    padding: 0;
-    margin: 0;
-  }
-
-  &_nonbk {
-    background: none;
-  }
 }

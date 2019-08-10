@@ -1,0 +1,253 @@
+.header {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.8;
+  color: @color-white;
+  text-transform: uppercase;
+  text-align: center;
+
+  background-color: @color-blue;
+
+  &_mobileonly {
+    display: block;
+  }
+
+  &_desktoponly {
+    display: none;
+  }
+}
+
+.header__title {
+  position: relative;
+  min-height: 67px;
+
+  background-color: @color-blue;
+  border-bottom: @color-black 1px solid;
+}
+
+.header__menu-link {
+  display: block;
+  padding: 16px 0;
+
+  color: @color-white;
+  text-decoration: none;
+  border-bottom: @color-black 1px solid;
+  box-shadow: inset 0 1px 0 0 fade(@color-white, 15%);
+
+  &:visited {
+    color: @color-white;
+  }
+}
+
+.header__logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.header__logo-piture {
+  display: block;
+  width: 75px;
+  height: 23px;
+}
+
+.header__menu-list a[href] {
+  &:hover,
+  &:focus {
+    color: @color-red;
+  }
+
+  &:active {
+    color: fade(@color-red, 30%);
+  }
+}
+
+@media (max-width: @tablet-max) {
+  .header__button-menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    width: 23px;
+    height: 23px;
+
+    cursor: pointer;
+    border: none;
+
+    background-color: @color-blue;
+  }
+
+  .header__container_closed .header__button-menu {
+    width: 50px;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      width: 50px;
+      height: 3px;
+
+      background-color: @color-white;
+      box-shadow: 0 10px 0 0 @color-white, 0 20px 0 0 @color-white;
+    }
+
+    &:hover::before,
+    &:focus::before {
+      background-color: @color-red;
+      box-shadow: 0 10px 0 0 @color-red, 0 20px 0 0 @color-red;
+    }
+
+    &:active::before {
+      background-color: fade(@color-red, 30%);
+      box-shadow: 0 10px 0 0 fade(@color-red, 30%), 0 20px 0 0 fade(@color-red, 30%);
+    }
+  }
+
+  .header__container_closed .header__menu-list {
+    display: none;
+  }
+
+  .header__container_opened .header__button-menu {
+    &::before,
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 10px;
+      right: 0;
+
+      width: 23px;
+      height: 3px;
+
+      background-color: @color-white;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    &:hover::before,
+    &:focus::before,
+    &:hover::after,
+    &:focus::after {
+      background-color: @color-red;
+    }
+
+    &:active::before,
+    &:active::after {
+      background-color: fade(@color-red, 30%);
+    }
+  }
+
+  .header__container_nojs .header__menu-list {
+    display: unset;
+  }
+
+  .header__container_nojs .header__button-menu {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-min) {
+  .header__title {
+    min-height: 110px;
+  }
+
+  .header__logo {
+    top: 27px;
+  }
+
+  .header__logo-piture {
+    width: 150px;
+    height: 40px;
+  }
+
+  .header__button-menu {
+    top: 47px;
+  }
+}
+
+@media (min-width: @desktop-min) {
+  .header {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1;
+    text-transform: none;
+
+    background-color: fade(@color-black, 30%);
+
+    &_mobileonly {
+      display: none;
+    }
+
+    &_desktoponly {
+      display: block;
+    }
+  }
+
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+
+    max-width: @desktop-width-content;
+    margin: 0 auto;
+  }
+
+  .header__title {
+    position: unset;
+
+    text-align: left;
+    border: none;
+
+    background: none;
+  }
+
+  .header__logo {
+    display: block;
+    position: unset;
+
+    margin-top: 27px;
+    margin-right: 170px;
+  }
+
+  .header__button-menu {
+    display: none;
+  }
+
+  .header__menu-list {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+
+  .header__menu-link {
+    display: block;
+    padding: 45px 0;
+    padding-bottom: 10px;
+
+    border: none;
+    box-shadow: none;
+
+    &_current {
+      border-bottom: 3px solid @color-white;
+    }
+  }
+
+  .header__menu-list a[href] {
+    &:hover,
+    &:focus {
+      color: @color-red;
+    }
+
+    &:active {
+      color: fade(@color-white, 30%);
+    }
+  }
+}

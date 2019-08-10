@@ -1,19 +1,10 @@
 .combo-box {
-  padding: 15px 20px;
-
   font-weight: 300;
-  font-size: 14px;
-  line-height: 1.7;
   text-align: center;
-
-  &_light {
-    color: @color-blue;
-    background-color: @color-white;
-  }
 
   &_dark {
     color: @color-white;
-    background-color: @color-blue;
+    background-color: @color-darkblue;
   }
 }
 
@@ -29,10 +20,20 @@
 }
 
 .combo-box__button,
-.combo-box__notation,
-.combo-box__links {
+.combo-box__notation {
   max-width: @mobile-width-content;
   padding: 15px 20px;
+  width: 100%;
+}
+
+.combo-box__button a {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+}
+
+.combo-box__links {
+  width: 210px;
 }
 
 @media (min-width: @tablet-min) and (max-width: @tablet-max) {
@@ -41,29 +42,28 @@
   }
 
   .combo-box__title {
+    max-width: 240px;
     display: block;
   }
 
   .combo-box__button,
-  .combo-box__notation,
-  .combo-box__links {
+  .combo-box__notation {
     max-width: 300px;
   }
 }
 
 @media (min-width: @desktop-min) {
   .combo-box {
-    padding-left: 130px;
     background: none;
   }
 
   .combo-box__title {
+    font-size: 50px;
     display: block;
   }
 
   .combo-box__button,
-  .combo-box__notation,
-  .combo-box__links {
+  .combo-box__notation {
     max-width: 300px;
   }
 }
