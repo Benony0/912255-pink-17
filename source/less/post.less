@@ -4,7 +4,7 @@
   justify-content: space-between;
   flex-grow: 1;
 
-  padding: 23px 18px;
+  padding: 16px 18px 30px 18px;
 
   background-color: @color-grey;
 }
@@ -41,7 +41,18 @@
   text-transform: uppercase;
 }
 
+@media (max-width: @mobile-max) {
+  .post__like-number {
+    margin-left: 15px;
+    font-size: 12px;
+  }
+}
+
 @media (min-width: @tablet-min) {
+  .post {
+    padding: 25px 25px 20px 25px;
+  }
+
   .post_panoram {
     display: flex;
     flex-direction: row;
@@ -65,5 +76,9 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+  }
+
+  .post__like-number {
+    font-size: 12px;
   }
 }
