@@ -45,7 +45,6 @@
 }
 
 .effect__title {
-  width: 160px;
   margin: 0;
   padding: 0;
 
@@ -68,12 +67,20 @@
   .effect {
     display: block;
   }
+
+  .effect__title {
+    width: 160px;
+  }
 }
 
 @media (min-width: @desktop-min) {
   .effect {
     display: block;
     background-color: @color-grey;
+  }
+
+  .effect__title {
+    width: 160px;
   }
 
   .effect__picture {
