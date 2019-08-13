@@ -7,14 +7,6 @@
   text-align: center;
 
   background-color: @color-blue;
-
-  &_mobileonly {
-    display: block;
-  }
-
-  &_desktoponly {
-    display: none;
-  }
 }
 
 .header__title {
@@ -176,20 +168,15 @@
 
 @media (min-width: @desktop-min) {
   .header {
+    position: absolute;
+    width: 100%;
+
     font-weight: normal;
     font-size: 18px;
     line-height: 1;
     text-transform: none;
 
     background-color: fade(@color-black, 30%);
-
-    &_mobileonly {
-      display: none;
-    }
-
-    &_desktoponly {
-      display: block;
-    }
   }
 
   .header__container {
