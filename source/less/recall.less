@@ -2,41 +2,95 @@
   text-align: center;
 }
 
+.recall__author {
+  color: @color-black;
+}
+
 @media (max-width: @mobile-max) {
   .recall__author {
     order: 1;
-    margin-top: 40px;
+
+    margin-top: 42px;
+    margin-bottom: 0;
+
+    font-size: 18px;
   }
 
   .recall__text {
     order: 2;
+
+    margin-bottom: 40px;
+
+    font-size: 14px;
+    line-height: 2.1;
   }
 
   .recall__paginator {
     order: 3;
   }
-
-  .recall__picture-box,
-  .recall__caption,
-  .recall__batton-left,
-  .recall__batton-right {
-    display: none;
-  }
 }
 
 @media (min-width: @tablet-min) and (max-width: @tablet-max) {
-  .recall__picture-box {
-    display: none;
+  .recall__author {
+    margin-bottom: 0;
+
+    font-size: 20px;
+    line-height: 1.5;
   }
 
-  .recall__batton-left,
-  .recall__batton-right {
-    display: none;
+  .recall__caption {
+    margin-bottom: 35px;
+
+    font-size: 14px;
+    line-height: 2.1;
+  }
+
+  .recall__text {
+    margin-top: 35px;
+
+    font-size: 18px;
   }
 }
 
 @media (min-width: @desktop-min) {
-  .recall__paginator {
-    display: none;
+  .recall__wrapper {
+    position: relative;
+
+    margin-top: 70px;
+  }
+
+  .recall__picture-box {
+    margin-bottom: 30px;
+  }
+
+  .recall__author {
+    margin-bottom: 0;
+
+    font-size: 24px;
+    line-height: 1.25;
+  }
+
+  .recall__caption {
+    font-size: 18px;
+  }
+
+  .recall__text {
+    margin-bottom: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+
+    font-size: 18px;
+  }
+
+  .recall__batton-left {
+    position: absolute;
+    left: 0;
+    top: 145px;
+  }
+
+  .recall__batton-right {
+    position: absolute;
+    right: 0;
+    top: 145px;
   }
 }
