@@ -45,8 +45,6 @@
   }
 
   &_form {
-    width: 100%;
-
     font-size: 18px;
     line-height: 1.7;
     color: @color-white;
@@ -54,6 +52,16 @@
 
     background-color: @color-green;
     border: none;
+  }
+
+  &_form:hover,
+  &_form:focus {
+    background-color: @color-green-hover;
+  }
+
+  &_form:active {
+    color: fade(@color-white, 30%);
+    background-color: @color-green-active;
   }
 }
 

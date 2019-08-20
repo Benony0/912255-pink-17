@@ -87,8 +87,9 @@
         </fieldset>
 
         <fieldset class="form__progress">
+          <legend class="form__text form__legend-progress hidden_mobile">Ваши безбашенные достижения в путешествии</legend>
           <div class="form__progress-content container">
-            <legend class="form__text form__legend-progress">Ваши безбашенные достижения в путешествии</legend>
+            <div class="form__text form__legend-progress hidden_tablet hidden_desktop">Ваши безбашенные достижения в путешествии</div>
             <div class="form__progress-items">
               <div class="form__check">
                 <input class="form__check-btn" type="checkbox" name="selfi" id="checkbox-selfi" checked>
@@ -120,19 +121,22 @@
 
         <fieldset class="form__contacts container">
           <legend class="form__text form__legend-contacts hidden_mobile">Контактная информация</legend>
-          <div class="form__phone">
-            <label class="form__text form__text_label" for="phone">Номер телефона</label>
-            <input class="form__input" type="text" id="phone" name="phone" placeholder="Номер, пожалуйста">
-          </div>
-          <div class="form__email">
-            <label class="form__text form__text_label" for="email">Адрес почты</label>
-            <input class="form__input" type="email" id="email" name="email" placeholder="Введите почту *" required>
+          <div class="form__contacts-content">
+            <div class="form__phone">
+              <label class="form__text form__text_label" for="phone">Номер телефона</label>
+              <input class="form__input form__input-phone" type="text" id="phone" name="phone" placeholder="Номер, пожалуйста">
+            </div>
+            <div class="form__email">
+              <label class="form__text form__text_label" for="email">Адрес почты</label>
+              <input class="form__input form__input-email" type="email" id="email" name="email" placeholder="Введите почту *" required>
+            </div>
           </div>
         </fieldset>
 
         <fieldset class="form__soft">
+          <legend class="form__text form__legend-soft hidden_mobile">С каким приложением путешествовали?</legend>
           <div class="form__soft-content container">
-            <legend class="form__text form__legend-soft">С каким приложением путешествовали?</legend>
+            <div class="form__text form__legend-soft hidden_tablet hidden_desktop">С каким приложением путешествовали?</div>
             <div class="form__soft-items">
               <div class="form__radio">
                 <input class="form__radio-btn" type="radio" name="soft" id="radio-ios" checked>
@@ -152,12 +156,15 @@
 
         <fieldset class="form__feedback container">
           <legend class="form__text form__legend-feedback">Опишите свои эмоции</legend>
-          <textarea class="form__input" name="feedback" rows="6" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          <textarea class="form__input form__input-feedback" name="feedback" rows="6" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
 
         <div class="form__footer container">
           <button class="button button_form btn-form-submit" type="submit">Отправить форму</button>
-          <p class="form__footer-caption"><span class="form__text">*</span> - обязательные поля</p>
+          <p class="form__footer-caption">
+            <span class="form__text">*</span>
+            &mdash; обязательные <span class="hidden_mobile hidden_tablet">для заполнения</span> поля
+          </p>
         </div>
 
       </form>
