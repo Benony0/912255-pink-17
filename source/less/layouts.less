@@ -35,36 +35,127 @@
 
 .flex-sp {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.flex-col-sp {
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
 @media (max-width: @mobile-max) {
-  .col-mobile-to-row {
+  .cmob-to-rtabdesk,
+  .cmobtab-to-rdesk {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+    &_sb {
+      justify-content: center;
+      align-items: center;
+    }
+
+    &_wr {
+      flex-wrap: wrap;
+    }
+  }
+
+  .rmob-to-ctabdesk {
+    display: flex;
+    flex-direction: row;
+
+    &_sb {
+      justify-content: space-between;
+    }
+
+    &_sa {
+      justify-content: space-around;
+    }
+
+    &_wr {
+      flex-wrap: wrap;
+    }
   }
 }
 
 @media (min-width: @tablet-min) and (max-width: @tablet-max) {
-  .col-mobile-to-row {
+  .cmob-to-rtabdesk {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+
+    &_sb {
+      justify-content: space-between;
+    }
+
+    &_wr {
+      flex-wrap: wrap;
+    }
+  }
+
+  .cmobtab-to-rdesk {
+    display: flex;
+    flex-direction: column;
+
+    &_sb {
+      justify-content: center;
+      align-items: center;
+    }
+
+    &_wr {
+      flex-wrap: wrap;
+    }
+  }
+
+  .rmob-to-ctabdesk {
+    display: flex;
+    flex-direction: column;
+
+    &_sb,
+    &_sa {
+      justify-content: center;
+      align-items: center;
+    }
+
+    &_wr {
+      flex-wrap: wrap;
+    }
   }
 }
 
 @media (min-width: @desktop-min) {
-  .col-mobile-to-row {
+  .cmob-to-rtabdesk,
+  .cmobtab-to-rdesk {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+
+    &_sb {
+      justify-content: space-between;
+    }
+
+    &_wr {
+      flex-wrap: wrap;
+    }
+  }
+
+  .rmob-to-ctabdesk {
+    display: flex;
+    flex-direction: column;
+
+    &_sb,
+    &_sa {
+      justify-content: center;
+      align-items: center;
+    }
+
+    &_wr {
+      flex-wrap: wrap;
+    }
   }
 }
 
 // ////////////////////////////
-// Невидимки
+// Видимость
 // ////////////////////////////
 .visually-hidden {
   position: absolute;

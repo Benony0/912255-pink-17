@@ -1,0 +1,142 @@
+.send__content {
+  width: 100%;
+}
+
+@media (max-width: @mobile-max) {
+  .send {
+    background-color: @color-grey;
+  }
+
+  .send__box {
+    width: 100%;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .send__img {
+    display: block;
+    width: 280px;
+    height: 375px;
+  }
+
+  .send__btn-cut {
+    width: 44px;
+    height: 44px;
+  }
+
+  .send__btn-fill {
+    width: 48px;
+    height: 43px;
+  }
+
+  .send__btn-contrast {
+    width: 32px;
+    height: 32px;
+  }
+
+  .send__inputs {
+    position: relative;
+    padding-bottom: 75px;
+    margin-bottom: 20px;
+
+    border-bottom: 1px solid @color-grey3;
+  }
+
+  .send__input .editor__progress {
+    display: none;
+  }
+
+  .send__input-active .editor__progress {
+    display: block;
+  }
+
+  .send__input-active .btn-edit .btn-edit-svg,
+  .send__input-active .btn-edit:hover .btn-edit-svg,
+  .send__input-active .btn-edit:focus .btn-edit-svg {
+    fill: @color-red;
+  }
+
+  .send__buttons {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: @tablet-min) and (max-width: @tablet-max) {
+  .send {
+    background-color: @color-grey;
+  }
+
+  .send__box {
+    margin-top: 55px;
+    margin-bottom: 55px;
+  }
+
+  .send__img {
+    display: block;
+    width: 300px;
+    height: 400px;
+  }
+
+  .send__btn-cut {
+    width: 22px;
+    height: 22px;
+  }
+
+  .send__btn-fill {
+    width: 24px;
+    height: 22px;
+  }
+
+  .send__btn-contrast {
+    width: 16px;
+    height: 16px;
+  }
+
+  .send__input .btn-edit .btn-edit-svg,
+  .send__input .btn-edit:hover .btn-edit-svg,
+  .send__input .btn-edit:focus .btn-edit-svg {
+    fill: @color-red;
+  }
+}
+
+@media (min-width: @desktop-min) {
+  .send__content {
+    padding-right: 60px;
+    padding-left: 80px;
+
+    background-color: @color-grey;
+  }
+
+  .send__box {
+    margin-top: 55px;
+    margin-bottom: 60px;
+  }
+
+  .send__img {
+    display: block;
+    width: 300px;
+    height: 400px;
+  }
+
+  .send__btn-cut {
+    width: 44px;
+    height: 44px;
+  }
+
+  .send__btn-fill {
+    width: 48px;
+    height: 43px;
+  }
+
+  .send__btn-contrast {
+    width: 32px;
+    height: 32px;
+  }
+
+  .send__input .btn-edit .btn-edit-svg,
+  .send__input .btn-edit:hover .btn-edit-svg,
+  .send__input .btn-edit:focus .btn-edit-svg {
+    fill: @color-red;
+  }
+}

@@ -63,6 +63,76 @@
     color: fade(@color-white, 30%);
     background-color: @color-green-active;
   }
+
+  &_send-send,
+  &_send-cancel {
+    align-self: stretch;
+    box-sizing: border-box;
+
+    margin-top: 25px;
+    min-width: 185px;
+
+    border-radius: 50px;
+    background-color: transparent;
+  }
+
+  &_send-send {
+    color: @color-red;
+    border: 3px solid @color-red;
+  }
+
+  &_send-send:hover,
+  &_send-send:focus {
+    color: @color-white;
+    background-color: @color-red;
+    border: 3px solid @color-red;
+  }
+
+  &_send-send:active {
+    color: fade(@color-white, 30%);
+    background-color: @color-red;
+    border: 3px solid @color-red;
+  }
+
+  &_send-cancel {
+    color: fade(@color-blue, 10%);
+    border: 3px solid fade(@color-blue, 10%);
+  }
+
+  &_send-cancel:hover,
+  &_send-cancel:focus {
+    color: fade(@color-blue, 30%);
+    border: 3px solid fade(@color-blue, 30%);
+  }
+
+  &_send-cancel:active {
+    color: fade(@color-white, 30%);
+    background-color: fade(@color-blue, 30%);
+    border: 3px solid fade(@color-blue, 30%);
+  }
+}
+
+@media (max-width: @mobile-max) {
+  .button_send-send,
+  .button_send-cancel {
+    margin-top: 15px;
+  }
+}
+
+.btn-edit {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.btn-edit .btn-edit-svg {
+  fill: fade(@color-black, 30%);
+}
+
+.btn-edit:hover .btn-edit-svg,
+.btn-edit:focus .btn-edit-svg {
+  fill: fade(@color-black, 50%);
 }
 
 .paginator {
