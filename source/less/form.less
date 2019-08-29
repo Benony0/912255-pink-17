@@ -1,0 +1,727 @@
+@media (max-width: @mobile-max) {
+  // поведение
+  .form__user-item,
+  .form__progress-items,
+  .form__soft-items {
+    display: flex;
+    flex-direction: column;
+  }
+
+  // группы и легенды
+  .form__user {
+    margin-bottom: 30px;
+    padding: 0;
+
+    border: none;
+  }
+
+  .form__feedback {
+    margin-top: 31px;
+    margin-bottom: 15px;
+    padding: 0;
+
+    border: none;
+  }
+
+  .form__contacts {
+    margin-top: 32px;
+    margin-bottom: 30px;
+    padding: 0;
+
+    border: none;
+  }
+
+  .form__soft {
+    padding-top: 40px;
+    padding-bottom: 0;
+
+    background-color: @color-grey;
+    border: none;
+  }
+
+  .form__progress {
+    padding-top: 38px;
+    padding-bottom: 0;
+
+    background-color: @color-grey;
+    border: none;
+  }
+
+  .form__legend-progress,
+  .form__legend-soft {
+    margin-right: 20px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+
+    line-height: 1.3;
+    text-align: center;
+  }
+
+  .form__legend-feedback {
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+
+    line-height: 2.1;
+    text-align: center;
+  }
+
+  .form__legend-progress {
+    margin-right: 20px;
+    margin-bottom: 43px;
+    margin-left: 20px;
+
+    line-height: 1.3;
+    text-align: center;
+  }
+
+  // названия и подписи
+  .form__text {
+    color: @color-red;
+    text-transform: uppercase;
+
+    &_label {
+      margin-bottom: 5px;
+      margin-left: 22px;
+
+      line-height: 2.1;
+    }
+  }
+
+  // элементы диалога
+  .form__input,
+  .form__input::placeholder,
+  .form__check-label,
+  .form__radio-label {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.7;
+    color: @color-blue;
+  }
+
+  .form__input {
+    box-sizing: border-box;
+    width: 100%;
+
+    margin-bottom: 15px;
+    padding: 15px 19px;
+
+    border: 2px solid @color-grey2;
+  }
+
+  .form__input:hover,
+  .form__input:focus {
+    border: 2px solid @color-blue;
+  }
+
+  .form__input:active {
+    border: 2px solid @color-red;
+  }
+
+  .form__email {
+    margin-top: 7px;
+  }
+
+  .form__check {
+    margin-bottom: 42px;
+    padding-bottom: 10px;
+  }
+
+  .form__radio {
+    margin-bottom: 35px;
+    padding-bottom: 10px;
+  }
+
+  .form__check:last-child {
+    margin-bottom: 37px;
+    padding-bottom: 10px;
+  }
+
+  .form__radio:last-child {
+    margin-bottom: 37px;
+    padding-bottom: 10px;
+  }
+
+  .form__check-btn,
+  .form__radio-btn {
+    display: none;
+  }
+
+  .form__check-btn + .form__check-label {
+    background: url("../img/icon-check-off.svg") no-repeat scroll 0 0;
+    cursor: pointer;
+    padding-top: 7px;
+    padding-bottom: 10px;
+    padding-left: 70px;
+  }
+
+  .form__radio-btn + .form__radio-label {
+    background: url("../img/icon-radio-off.svg") no-repeat scroll 0 0;
+    cursor: pointer;
+    padding-top: 7px;
+    padding-bottom: 10px;
+    padding-left: 70px;
+  }
+
+  .form__check-btn:checked + .form__check-label {
+    background: url("../img/icon-check-on.svg") no-repeat scroll 0 0;
+  }
+
+  .form__radio-btn:checked + .form__radio-label {
+    background: url("../img/icon-radio-on.svg") no-repeat scroll 0 0;
+  }
+
+  .form__footer {
+    line-height: 2.1;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .form__footer-caption {
+    margin-top: 36px;
+    margin-bottom: 16px;
+  }
+
+  .button_form {
+    width: 100%;
+  }
+}
+
+@media (min-width: @tablet-min) and (max-width: @tablet-max) {
+  // поведение
+  .form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .form__user,
+  .form__progress,
+  .form__contacts,
+  .form__soft,
+  .form__feedback,
+  .form__footer {
+    flex-grow: 1;
+
+    box-sizing: border-box;
+    width: @tablet-width-content;
+    max-width: @tablet-width-content;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .form__user {
+    order: 1;
+
+    margin-bottom: 7px;
+    padding: 0;
+
+    border: none;
+  }
+
+  .form__soft {
+    order: 2;
+
+    margin-bottom: 54px;
+
+    padding-top: 45px;
+    padding-right: 57px;
+    padding-bottom: 14px;
+    padding-left: 57px;
+  }
+
+  .form__contacts {
+    order: 3;
+
+    margin-bottom: 53px;
+
+    padding-top: 35px;
+    padding-right: 59px;
+    padding-bottom: 0;
+    padding-left: 58px;
+  }
+
+  .form__progress {
+    order: 4;
+
+    margin-bottom: 54px;
+
+    padding-top: 45px;
+    padding-bottom: 2px;
+    padding-left: 58px;
+  }
+
+  .form__feedback {
+    order: 5;
+
+    margin-bottom: 67px;
+
+    padding-top: 35px;
+    padding-right: 58px;
+    padding-bottom: 9px;
+    padding-left: 58px;
+  }
+
+  .form__footer {
+    order: 6;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-bottom: 52px;
+  }
+
+  .form__user-item {
+    display: flex;
+    flex-direction: row;
+
+    margin-bottom: 35px;
+  }
+
+  .form__phone,
+  .form__email {
+    position: relative;
+
+    display: flex;
+    flex-direction: column-reverse;
+
+    margin-bottom: 28px;
+  }
+
+  // группы и легенды
+  .form__soft,
+  .form__contacts,
+  .form__progress,
+  .form__feedback {
+    border: 2px solid @color-grey2;
+  }
+
+  .form__legend-soft,
+  .form__legend-contacts,
+  .form__legend-progress,
+  .form__legend-feedback {
+    text-align: center;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  // названия и подписи
+  .form__text {
+    color: @color-red;
+    text-transform: uppercase;
+
+    &_label {
+      margin-right: 18px;
+      padding-top: 19px;
+
+      line-height: 2.1;
+    }
+  }
+
+  .form__contacts .form__text_label {
+    margin: 0;
+    margin-left: 19px;
+    padding: 0;
+  }
+
+  .form__contacts .form__input {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .form__footer-caption {
+    padding-top: 7px;
+    text-transform: uppercase;
+  }
+
+  // элементы диалога
+  .form__input,
+  .form__input::placeholder,
+  .form__check-label,
+  .form__radio-label {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.7;
+    color: @color-blue;
+  }
+
+  .form__input {
+    box-sizing: border-box;
+    width: 100%;
+
+    margin-bottom: 15px;
+    padding: 15px 19px;
+
+    border: 2px solid @color-grey2;
+  }
+
+  .form__input:hover,
+  .form__input:focus {
+    border: 2px solid @color-blue;
+  }
+
+  .form__input:active {
+    border: 2px solid @color-red;
+  }
+
+  .button-contact-phone,
+  .button-contact-mail {
+    position: absolute;
+    width: 60px;
+    height: 63px;
+
+    right: 0;
+    top: 0;
+
+    background-color: @color-grey2;
+    border: none;
+  }
+
+  .form__check {
+    margin-bottom: 42px;
+    padding-bottom: 10px;
+  }
+
+  .form__radio {
+    margin-bottom: 35px;
+    padding-bottom: 10px;
+  }
+
+  .form__check-btn,
+  .form__radio-btn {
+    display: none;
+  }
+
+  .form__check-btn + .form__check-label {
+    background: url("../img/icon-check-off.svg") no-repeat scroll 0 0;
+    cursor: pointer;
+    padding-top: 7px;
+    padding-bottom: 10px;
+    padding-left: 60px;
+  }
+
+  .form__radio-btn + .form__radio-label {
+    background: url("../img/icon-radio-off.svg") no-repeat scroll 0 0;
+    cursor: pointer;
+    padding-top: 7px;
+    padding-bottom: 10px;
+    padding-left: 60px;
+  }
+
+  .form__check-btn:checked + .form__check-label {
+    background: url("../img/icon-check-on.svg") no-repeat scroll 0 0;
+  }
+
+  .form__radio-btn:checked + .form__radio-label {
+    background: url("../img/icon-radio-on.svg") no-repeat scroll 0 0;
+  }
+
+  .button_form {
+    width: 300px;
+  }
+}
+
+@media (min-width: @desktop-min) {
+  // поведение
+  .form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    margin-right: auto;
+    margin-left: auto;
+    max-width: @desktop-width-content;
+  }
+
+  .form__user,
+  .form__progress,
+  .form__contacts,
+  .form__soft,
+  .form__feedback,
+  .form__footer {
+    box-sizing: border-box;
+  }
+
+  .form__user {
+    order: 1;
+    flex-basis: 435px;
+
+    margin-top: 11px;
+    margin-left: 0;
+    padding: 0;
+
+    border: none;
+  }
+
+  .form__soft {
+    order: 2;
+    flex-basis: 435px;
+
+    max-width: 435px;
+    max-height: 308px;
+
+    margin: 0;
+    margin-bottom: 31px;
+
+    padding-top: 45px;
+    padding-right: 57px;
+    padding-bottom: 0;
+    padding-left: 57px;
+  }
+
+  .form__contacts {
+    flex-grow: 1;
+    order: 3;
+    flex-basis: 940px;
+
+    margin-bottom: 54px;
+
+    padding-top: 32px;
+    padding-right: 59px;
+    padding-bottom: 0;
+    padding-left: 58px;
+  }
+
+  .form__progress {
+    flex-grow: 1;
+    order: 4;
+    flex-basis: 940px;
+
+    margin-bottom: 54px;
+
+    padding-top: 45px;
+    padding-bottom: 2px;
+    padding-left: 58px;
+  }
+
+  .form__feedback {
+    flex-grow: 1;
+    order: 5;
+    flex-basis: 940px;
+
+    margin-bottom: 78px;
+
+    padding-top: 35px;
+    padding-right: 58px;
+    padding-bottom: 9px;
+    padding-left: 58px;
+  }
+
+  .form__footer {
+    flex-grow: 1;
+    order: 6;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-bottom: 2px;
+  }
+
+  .form__user-item {
+    display: flex;
+    flex-direction: row;
+
+    margin-bottom: 38px;
+  }
+
+  .form__phone,
+  .form__email {
+    position: relative;
+
+    display: flex;
+    flex-direction: column-reverse;
+    flex-basis: 375px;
+
+    max-width: 375px;
+    margin-bottom: 12px;
+  }
+
+  // группы и легенды
+  .form__soft,
+  .form__contacts,
+  .form__progress,
+  .form__feedback {
+    border: 2px solid @color-grey2;
+  }
+
+  .form__legend-soft {
+    text-align: center;
+    padding-right: 0;
+    padding-left: 0;
+    width: 318px;
+  }
+
+  .form__legend-contacts,
+  .form__legend-progress,
+  .form__legend-feedback {
+    text-align: center;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .form__contacts-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .form__progress-items {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    max-height: 200px;
+  }
+
+  .form__soft-items {
+    margin-left: 18px;
+  }
+
+  // названия и подписи
+  .form__text {
+    color: @color-red;
+    text-transform: uppercase;
+
+    &_label {
+      margin-right: 18px;
+      padding-top: 19px;
+
+      line-height: 2.1;
+    }
+  }
+
+  .form__contacts .form__text_label {
+    margin: 0;
+    margin-left: 19px;
+    padding: 0;
+  }
+
+  .form__contacts .form__input {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .form__footer-caption {
+    padding-top: 7px;
+    text-transform: uppercase;
+  }
+
+  // элементы диалога
+  .form__input,
+  .form__input::placeholder,
+  .form__check-label,
+  .form__radio-label {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.7;
+    color: @color-blue;
+  }
+
+  .form__input {
+    box-sizing: border-box;
+    width: 100%;
+
+    margin-bottom: 15px;
+    padding: 15px 19px;
+
+    border: 2px solid @color-grey2;
+  }
+
+  .button-contact-phone,
+  .button-contact-mail {
+    position: absolute;
+    width: 60px;
+    height: 63px;
+
+    right: 0;
+    top: 0;
+
+    background-color: @color-grey2;
+    border: none;
+  }
+
+  .form__input-feedback {
+    max-height: 125px;
+  }
+
+  .form__input-phone,
+  .form__input-email {
+    padding-right: 30px;
+  }
+
+  .form__input-phone::before {
+    content: "";
+
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    width: 16px;
+    height: 18px;
+
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  .form__input:hover,
+  .form__input:focus {
+    border: 2px solid @color-blue;
+  }
+
+  .form__input:active {
+    border: 2px solid @color-red;
+  }
+
+  .form__check {
+    margin-bottom: 46px;
+    padding-bottom: 10px;
+  }
+
+  .form__radio {
+    margin-bottom: 35px;
+    padding-bottom: 10px;
+  }
+
+  .form__check-btn,
+  .form__radio-btn {
+    display: none;
+  }
+
+  .form__check-btn + .form__check-label {
+    background: url("../img/icon-check-off.svg") no-repeat scroll 0 0;
+    cursor: pointer;
+    padding-top: 7px;
+    padding-bottom: 10px;
+    padding-left: 60px;
+  }
+
+  .form__radio-btn + .form__radio-label {
+    background: url("../img/icon-radio-off.svg") no-repeat scroll 0 0;
+    cursor: pointer;
+    padding-top: 7px;
+    padding-bottom: 10px;
+    padding-left: 60px;
+  }
+
+  .form__check-btn:checked + .form__check-label {
+    background: url("../img/icon-check-on.svg") no-repeat scroll 0 0;
+  }
+
+  .form__radio-btn:checked + .form__radio-label {
+    background: url("../img/icon-radio-on.svg") no-repeat scroll 0 0;
+  }
+
+  .button_form {
+    width: 300px;
+  }
+}

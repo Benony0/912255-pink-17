@@ -54,18 +54,128 @@
 
     <section class="new-post">
 
-      <h1 class="visually-hidden">Конкурс на самое базбашенное путешествие с Пинк</h1>
+      <h1 class="visually-hidden">Конкурс на самое безбашенное путешествие с Пинк</h1>
 
       <div class="main-title">
-        <p class="main-title__text main-title__text_desktop760 container">Конкурс на самое базбашенное путешествие с Пинк</p>
+        <p class="main-title__text main-title__text_desktop760 container">Конкурс на самое безбашенное путешествие с Пинк</p>
       </div>
 
-      <!-- TODO: Форма -->
+      <div class="caption-box">
+        <div class="container ones-grid">
+          <div class="caption-box__text">
+            Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+            <span class="hidden_mobile">Пожалуйста, заполните форму ниже:</span>
+          </div>
+        </div>
+      </div>
+
+      <form class="form" method="POST" action="echo.htmlacademy.ru">
+
+        <fieldset class="form__user container">
+          <div class="form__user-item">
+            <label class="form__text form__text_label" for="surname">Фамилия:</label>
+            <input class="form__input" type="text" id="surname" name="surname" placeholder="Укажите фалимию *" required>
+          </div>
+          <div class="form__user-item">
+            <label class="form__text form__text_label" for="name">Имя:</label>
+            <input class="form__input" type="text" id="name" name="name" placeholder="Введите ваше имя *" required>
+          </div>
+          <div class="form__user-item">
+            <label class="form__text form__text_label" for="patronymic">Отчество:</label>
+            <input class="form__input" type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
+          </div>
+        </fieldset>
+
+        <fieldset class="form__progress">
+          <legend class="form__text form__legend-progress hidden_mobile">Ваши безбашенные достижения в путешествии</legend>
+          <div class="form__progress-content container">
+            <div class="form__text form__legend-progress hidden_tablet hidden_desktop">Ваши безбашенные достижения в путешествии</div>
+            <div class="form__progress-items">
+              <div class="form__check">
+                <input class="form__check-btn" type="checkbox" name="selfi" id="checkbox-selfi" checked>
+                <label class="form__check-label" for="checkbox-selfi">Сделал селфи с акулой</label>
+              </div>
+              <div class="form__check">
+                <input class="form__check-btn" type="checkbox" name="fire" id="checkbox-fire" checked>
+                <label class="form__check-label" for="checkbox-fire">Обгорел на пляже</label>
+              </div>
+              <div class="form__check">
+                <input class="form__check-btn" type="checkbox" name="norris" id="checkbox-norris">
+                <label class="form__check-label" for="checkbox-norris">Видел Чака Норриса</label>
+              </div>
+              <div class="form__check">
+                <input class="form__check-btn" type="checkbox" name="souvenir" id="checkbox-souvenir">
+                <label class="form__check-label" for="checkbox-souvenir">Накупил сувениров</label>
+              </div>
+              <div class="form__check">
+                <input class="form__check-btn" type="checkbox" name="tower" id="checkbox-tower" checked>
+                <label class="form__check-label" for="checkbox-tower">Удержал башню</label>
+              </div>
+              <div class="form__check">
+                <input class="form__check-btn" type="checkbox" name="hotel" id="checkbox-hotel">
+                <label class="form__check-label" for="checkbox-hotel">Разгромил отель</label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="form__contacts container">
+          <legend class="form__text form__legend-contacts hidden_mobile">Контактная информация</legend>
+          <div class="form__contacts-content">
+            <div class="form__phone">
+              <label class="form__text form__text_label" for="phone">Номер телефона</label>
+              <input class="form__input form__input-phone" type="text" id="phone" name="phone" placeholder="Номер, пожалуйста">
+              <button class="button button-contact-phone hidden_mobile btn-contact-phone" type="button"><img src="img/icon-phone.svg" alt="tel"></button>
+            </div>
+            <div class="form__email">
+              <label class="form__text form__text_label" for="email">Адрес почты</label>
+              <input class="form__input form__input-email" type="email" id="email" name="email" placeholder="Введите почту *" required>
+              <button class="button button-contact-mail hidden_mobile btn-contact-mail" type="button"><img src="img/icon-mail.svg" alt="min_style"></button>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="form__soft">
+          <legend class="form__text form__legend-soft hidden_mobile">С каким приложением путешествовали?</legend>
+          <div class="form__soft-content container">
+            <div class="form__text form__legend-soft hidden_tablet hidden_desktop">С каким приложением путешествовали?</div>
+            <div class="form__soft-items">
+              <div class="form__radio">
+                <input class="form__radio-btn" type="radio" name="soft" id="radio-ios" checked>
+                <label class="form__radio-label" for="radio-ios">Pink для iOS</label>
+              </div>
+              <div class="form__radio">
+                <input class="form__radio-btn" type="radio" name="soft" id="radio-android">
+                <label class="form__radio-label" for="radio-android">Pink на Android</label>
+              </div>
+              <div class="form__radio">
+                <input class="form__radio-btn" type="radio" name="soft" id="radio-win">
+                <label class="form__radio-label" for="radio-win">Windows Phone</label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="form__feedback container">
+          <legend class="form__text form__legend-feedback">Опишите свои эмоции</legend>
+          <textarea class="form__input form__input-feedback" name="feedback" rows="6" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </fieldset>
+
+        <div class="form__footer container">
+          <button class="button button_form btn-form-submit" type="submit">Отправить форму</button>
+          <p class="form__footer-caption">
+            <span class="form__text">*</span>
+            &mdash; обязательные <span class="hidden_mobile hidden_tablet">для заполнения</span> поля
+          </p>
+        </div>
+
+      </form>
+
     </section>
 
   </main>
 
-  <footer class="footer container col-mobile-to-row">
+  <footer class="footer container cmob-to-rtabdesk cmob-to-rtabdesk_sb">
 
     <div class="footer__item-box">
       <a class="footer__logo" href="index.html">
@@ -153,7 +263,33 @@
 
   </footer>
 
-  <!-- Формы/попапы  -->
+  <form class="popup popup__error hidden" method="POST" action="echo.htmlacademy.ru">
+    <div class="popup__main">
+      <h2 class="popup__title">
+        Что-то пошло не так!
+      </h2>
+      <p class="popup__text">
+        Проверьте поля, выделенные красным, скорее всего вызабыли их заполнить
+      </p>
+    </div>
+    <div class="popup__footer">
+      <button class="button button_form btn-popup-error-ok">OK</button>
+    </div>
+  </form>
+
+  <form class="popup popup__send hidden" method="POST" action="echo.htmlacademy.ru">
+    <div class="popup__main">
+      <h2 class="popup__title">
+        Ваша заявка отправлена
+      </h2>
+      <p class="popup__text">
+        Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.
+      </p>
+    </div>
+    <div class="popup__footer">
+      <button class="button button_form btn-popup-send--ok">OK</button>
+    </div>
+  </form>
 
   <!-- Подключение скриптов -->
   <script src="js/script.js"></script>

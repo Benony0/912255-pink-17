@@ -1,6 +1,6 @@
 .button {
   display: inline-block;
-  padding: 15px 20px;
+  padding: 16px 20px;
 
   font-weight: bold;
   font-size: 17px;
@@ -43,4 +43,132 @@
   &_nonbk {
     background: none;
   }
+
+  &_form {
+    font-size: 18px;
+    line-height: 1.7;
+    color: @color-white;
+    text-transform: uppercase;
+
+    background-color: @color-green;
+    border: none;
+  }
+
+  &_form:hover,
+  &_form:focus {
+    background-color: @color-green-hover;
+  }
+
+  &_form:active {
+    color: fade(@color-white, 30%);
+    background-color: @color-green-active;
+  }
+
+  &_send-send,
+  &_send-cancel {
+    align-self: stretch;
+    box-sizing: border-box;
+
+    margin-top: 25px;
+    min-width: 185px;
+
+    border-radius: 50px;
+    background-color: transparent;
+  }
+
+  &_send-send {
+    color: @color-red;
+    border: 3px solid @color-red;
+  }
+
+  &_send-send:hover,
+  &_send-send:focus {
+    color: @color-white;
+    background-color: @color-red;
+    border: 3px solid @color-red;
+  }
+
+  &_send-send:active {
+    color: fade(@color-white, 30%);
+    background-color: @color-red;
+    border: 3px solid @color-red;
+  }
+
+  &_send-cancel {
+    color: fade(@color-blue, 10%);
+    border: 3px solid fade(@color-blue, 10%);
+  }
+
+  &_send-cancel:hover,
+  &_send-cancel:focus {
+    color: fade(@color-blue, 30%);
+    border: 3px solid fade(@color-blue, 30%);
+  }
+
+  &_send-cancel:active {
+    color: fade(@color-white, 30%);
+    background-color: fade(@color-blue, 30%);
+    border: 3px solid fade(@color-blue, 30%);
+  }
+}
+
+@media (max-width: @mobile-max) {
+  .button_send-send,
+  .button_send-cancel {
+    margin-top: 15px;
+  }
+}
+
+.btn-edit {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.btn-edit .btn-edit-svg {
+  fill: fade(@color-black, 30%);
+}
+
+.btn-edit:hover .btn-edit-svg,
+.btn-edit:focus .btn-edit-svg {
+  fill: fade(@color-black, 50%);
+}
+
+.paginator {
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 64px;
+  height: 12px;
+}
+
+.paginator__point {
+  display: inline-block;
+  box-sizing: border-box;
+
+  width: 6px;
+  height: 6px;
+
+  border-radius: 12px;
+  // border: 3px solid @color-white;
+  background-color: fade(@color-darkgrey-bullet, 30%);
+
+  &_current {
+    width: 12px;
+    height: 12px;
+
+    border: 3px solid @color-blue;
+    background-color: @color-white;
+  }
+}
+
+.paginator__point:hover,
+.paginator__point:focus {
+  background-color: @color-darkgrey-bullet;
+}
+
+.paginator__point:active {
+  background-color: fade(@color-darkgrey-bullet, 10%);
 }
