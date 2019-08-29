@@ -217,43 +217,85 @@
 
       <h2 class="visually-hidden">Тарифы</h2>
 
+      <table class="tarifs__price price hidden_tablet hidden_desktop">
+        <tr class="price__row price__row-head">
+          <th class="price__column">
+          </th>
+          <th class="price__column price__column-active price__hit">
+            <h3 class="price__head">Стандарт</h3>
+            <p class="price__cost">3,99 USD</p>
+          </th>
+          <th class="price__column">
+          </th>
+        </tr>
+        <tr class="price__row">
+          <td></td>
+          <td class="price__option flex-sp">
+            <span>Розовый фильтр</span>
+            <img class="price__img-yes" src="img/icon-yes.svg" width="22" height="16" alt="Да">
+          </td>
+          <td></td>
+        </tr>
+        <tr class="price__row">
+          <td></td>
+          <td class="price__option flex-sp">
+            <span>Смайлики</span>
+            <img class="price__img-yes" src="img/icon-yes.svg" width="22" height="16" alt="Нет">
+          </td>
+          <td></td>
+        </tr>
+        <tr class="price__row">
+          <td></td>
+          <td class="price__option flex-sp">
+            <span>Комментарии</span>
+            <img class="price__img-no" src="img/icon-no.svg" width="27" height="27" alt="Нет">
+          </td>
+          <td></td>
+        </tr>
+      </table>
+
       <div class="tarifs__wrapper container">
-        <table class="tarifs__price price">
-          <tr>
-            <th>
+        <table class="tarifs__price price hidden_mobile">
+          <tr class="price__row price__row-head">
+            <th class="price__column-empty">
             </th>
-            <th>
-              <h3>База</h3>
-              <p>1,99 USD</p>
+            <th class="price__column">
+              <h3 class="price__head">База</h3>
+              <p class="price__cost">1,99 USD</p>
             </th>
-            <th>
-              <h3>Стандарт</h3>
-              <p>3,99 USD</p>
+            <th class="price__column price__hit">
+              <h3 class="price__head">Стандарт</h3>
+              <p class="price__cost">3,99 USD</p>
             </th>
-            <th>
-              <h3>Анлим</h3>
-              <p>9,99 USD</p>
+            <th class="price__column">
+              <h3 class="price__head">Анлим</h3>
+              <p class="price__cost">9,99 USD</p>
             </th>
           </tr>
-          <tr>
-            <td>Розовый фильтр</td>
-            <td></td>
-            <td></td>
-            <td></td>
+          <tr class="price__row">
+            <td class="price__option">Розовый фильтр</td>
+            <td><img class="price__img-yes" src="img/icon-yes.svg" width="22" height="16" alt="Да"></td>
+            <td><img class="price__img-yes" src="img/icon-yes.svg" width="22" height="16" alt="Да"></td>
+            <td><img class="price__img-yes" src="img/icon-yes.svg" width="22" height="16" alt="Да"></td>
           </tr>
-          <tr>
-            <td>Смайлики</td>
-            <td></td>
-            <td></td>
-            <td></td>
+          <tr class="price__row">
+            <td class="price__option">Смайлики</td>
+            <td><img class="price__img-no" src="img/icon-no.svg" width="27" height="27" alt="Нет"></td>
+            <td><img class="price__img-yes" src="img/icon-yes.svg" width="22" height="16" alt="Да"></td>
+            <td><img class="price__img-yes" src="img/icon-yes.svg" width="22" height="16" alt="Да"></td>
           </tr>
-          <tr>
-            <td>Комментарии</td>
-            <td></td>
-            <td></td>
-            <td></td>
+          <tr class="price__row">
+            <td class="price__option">Комментарии</td>
+            <td><img class="price__img-no" src="img/icon-no.svg" width="27" height="27" alt="Нет"></td>
+            <td><img class="price__img-no" src="img/icon-no.svg" width="27" height="27" alt="Нет"></td>
+            <td><img class="price__img-yes" src="img/icon-yes.svg" width="22" height="16" alt="Да"></td>
           </tr>
         </table>
+        <div class="price__paginator paginator flex-sp hidden_tablet hidden_desktop">
+          <a class="paginator__point" href="#"></a>
+          <a class="paginator__point paginator__point_current" href="#"></a>
+          <a class="paginator__point" href="#"></a>
+        </div>
       </div>
 
     </section>
@@ -263,8 +305,24 @@
       <h2 class="visually-hidden">Контакты</h2>
 
       <div class="contacts__wrappe container">
-
+        <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
+        <ul class="contacts__items list-default cmob-to-rtabdesk cmob-to-rtabdesk_sb cmob-to-rtabdesk_wr">
+          <li class="contacts__item">
+            <p class="contacts__item-name">Звоните:</p>
+            <p class="contacts__item-value">+7 (812) 555-66-66</p>
+          </li>
+          <li class="contacts__item">
+            <p class="contacts__item-name">Пишите:</p>
+            <p class="contacts__item-value"><a class="contacts__mail-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+          </li>
+          <li class="contacts__item">
+            <p class="contacts__item-name">Приезжайте в гости:</p>
+            <p class="contacts__item-value">ул. Большая Конюшенная, 19/8</p>
+          </li>
+        </ul>
       </div>
+
+      <div class="map"></div>
 
     </section>
 

@@ -1,1 +1,40 @@
-// Блок Тарифы
+.tarifs {
+  background-color: @color-grey;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+}
+
+.tarifs__price {
+  margin-bottom: 39px;
+  width: 100%;
+}
+
+@media (max-width: @mobile-max) {
+  .tarifs {
+    padding-top: 160px;
+  }
+
+  .tarifs__wrapper {
+    padding-bottom: 48px;
+  }
+}
+
+@media (min-width: @tablet-min) and (max-width: @tablet-max) {
+  .tarifs {
+    padding-top: 130px;
+  }
+
+  .tarifs__wrapper {
+    padding-bottom: 30px;
+  }
+}
+
+@media (min-width: @desktop-min) {
+  .tarifs {
+    padding-top: 150px;
+  }
+
+  .tarifs__wrapper {
+    padding-bottom: 56px;
+  }
+}

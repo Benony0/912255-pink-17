@@ -1,1 +1,109 @@
-// Блок Контакты
+.contacts {
+  text-align: center;
+  line-height: 1.25
+}
+
+.contacts__item {
+  width: 280px;
+}
+
+.contacts__title {
+  font-weight: 300;
+}
+
+.contacts__item-name {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.contacts__item-value {
+  font-weight: 300;
+  font-size: 24px;
+  color: @color-red;
+}
+
+.contacts__mail-link {
+  color: @color-red;
+  text-decoration: none;
+}
+
+.contacts__mail-link:hover,
+.contacts__mail-link:focus {
+  color: @color-blue;
+  text-decoration: underline;
+}
+
+.contacts__mail-link:active {
+  color: fade(@color-blue, 30%);
+  text-decoration: none;
+}
+
+@media (max-width: @mobile-max) {
+  .contacts__wrappe {
+    margin-bottom: 15px;
+  }
+
+  .contacts__title {
+    margin-top: 41px;
+    margin-bottom: 33px;
+    font-size: 24px;
+  }
+
+  .contacts__item-name {
+    margin-top: 0;
+    margin-bottom: 2px;
+  }
+
+  .contacts__item-value {
+    margin-top: 0;
+    margin-bottom: 23px;
+  }
+}
+
+@media (min-width: @tablet-min) and (max-width: @tablet-max) {
+  .contacts__wrappe {
+    margin-bottom: 0;
+  }
+
+  .contacts__title {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 43px;
+    margin-bottom: 25px;
+    width: 390px;
+    font-size: 40px;
+  }
+
+  .contacts__item:nth-child(3) {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .contacts__item-name {
+    margin-bottom: 5px;
+  }
+
+  .contacts__item-value {
+    margin-top: 0;
+    margin-bottom: 29px;
+  }
+}
+
+@media (min-width: @desktop-min) {
+  .contacts__title {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 63px;
+    margin-bottom: 37px;
+    width: 470px;
+    font-size: 50px;
+  }
+
+  .contacts__item:nth-child(2) {
+    order: 2;
+  }
+
+  .contacts__item:nth-child(3) {
+    order: 1;
+  }
+}

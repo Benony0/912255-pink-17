@@ -136,7 +136,9 @@
 }
 
 .paginator {
-  display: inline-block;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 
   width: 64px;
   height: 12px;
@@ -146,15 +148,27 @@
   display: inline-block;
   box-sizing: border-box;
 
-  width: 12px;
-  height: 12px;
+  width: 6px;
+  height: 6px;
 
   border-radius: 12px;
-  border: 3px solid @color-white;
-  background-color: @color-darkgrey;
+  // border: 3px solid @color-white;
+  background-color: fade(@color-darkgrey-bullet, 30%);
 
   &_current {
+    width: 12px;
+    height: 12px;
+
     border: 3px solid @color-blue;
     background-color: @color-white;
   }
+}
+
+.paginator__point:hover,
+.paginator__point:focus {
+  background-color: @color-darkgrey-bullet;
+}
+
+.paginator__point:active {
+  background-color: fade(@color-darkgrey-bullet, 10%);
 }

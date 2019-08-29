@@ -284,6 +284,8 @@
 
   .form__phone,
   .form__email {
+    position: relative;
+
     display: flex;
     flex-direction: column-reverse;
 
@@ -366,6 +368,19 @@
 
   .form__input:active {
     border: 2px solid @color-red;
+  }
+
+  .button-contact-phone,
+  .button-contact-mail {
+    position: absolute;
+    width: 60px;
+    height: 63px;
+
+    right: 0;
+    top: 0;
+
+    background-color: @color-grey2;
+    border: none;
   }
 
   .form__check {
@@ -518,6 +533,8 @@
 
   .form__phone,
   .form__email {
+    position: relative;
+
     display: flex;
     flex-direction: column-reverse;
     flex-basis: 375px;
@@ -618,6 +635,19 @@
     padding: 15px 19px;
 
     border: 2px solid @color-grey2;
+  }
+
+  .button-contact-phone,
+  .button-contact-mail {
+    position: absolute;
+    width: 60px;
+    height: 63px;
+
+    right: 0;
+    top: 0;
+
+    background-color: @color-grey2;
+    border: none;
   }
 
   .form__input-feedback {
