@@ -4,6 +4,7 @@ var siteNavBtn = document.querySelector(".header__button-menu");
 var link = document.querySelector(".btn-form-submit");
 var popup = document.querySelector(".popup__send");
 var close = document.querySelector(".btn-popup-send-ok");
+var form = popup.querySelector(".form");
 
 siteNav.classList.remove("header__container_nojs");
 
@@ -17,7 +18,8 @@ siteNavBtn.addEventListener("click", function() {
   }
 });
 
-link.addEventListener("click", function (evt) {
+// link.addEventListener("click", function (evt) {
+form.addEventListener("submit", function (evt) {
   evt.preventDefault();
   popup.classList.remove("hidden");
   // popup.classList.add("display-show");
