@@ -6,7 +6,7 @@
     <meta name="keywords" content="ключевые слова через запятую">
     <meta name="description" content="Описание сайта для поисковиков">
 
-    <meta http-equiv="X-UA-Compatible" content="TE=edge">
+    <!-- <meta http-equiv="X-UA-Compatible" content="TE=edge"> -->
     <meta name="viewport" content="width-device-width, initial-scale=1">
 
     <!-- Нормализация стилей -->
@@ -74,13 +74,13 @@
           <div class="combo-box__links">
             <ul class="icons list-default">
               <li class="icons__item">
-                <a class="button button_icon btn-os-apple" href="https://www.apple.com/ru/itunes/"><img class="icons__img" src="img/logo-apple.svg" width="46" height="57" alt="Apple"></a>
+                <a class="button button_icon btn-os-apple" href="https://www.apple.com/ru/itunes/" aria-label="Скачать с Apple Store"><img class="icons__img" src="img/logo-apple.svg" width="46" height="57" alt="Apple"></a>
               </li>
               <li class="icons__item">
-                <a class="button button_icon btn-os-android" href="https://play.google.com/store?hl=ru"><img class="icons__img" src="img/logo-android.svg" width="42" height="47" alt="Android"></a>
+                <a class="button button_icon btn-os-android" href="https://play.google.com/store?hl=ru" aria-label="Скачать с Market place"><img class="icons__img" src="img/logo-android.svg" width="42" height="47" alt="Android"></a>
               </li>
               <li class="icons__item">
-                <a class="button button_icon btn-os-windows" href="https://www.microsoft.com/ru-ru/store/apps/windows"><img class="icons__img" src="img/logo-microsoft.svg" width="44" height="42" alt="Windows"></a>
+                <a class="button button_icon btn-os-windows" href="https://www.microsoft.com/ru-ru/store/apps/windows" aria-label="Перейти в магазин Windows"><img class="icons__img" src="img/logo-microsoft.svg" width="44" height="42" alt="Windows"></a>
               </li>
             </ul>
           </div>
@@ -195,13 +195,15 @@
           25 лет, водитель трамвая
         </div>
         <a class="recall__batton-left hidden_mobile hidden_tablet" href="#">
-          <svg width="22" height="42">
-            <use xlink:href="img/sprite.svg#batton-left"></use>
+          <svg viewbox="0 0 21.706 41.719" width="22" height="42">
+            <path fill="#bec2c7" d="M2.045,20.859L21.458,1.446c0.331-0.331,0.331-0.867,0-1.198c-0.33-0.331-0.867-0.331-1.197,0L0.248,20.261 c-0.331,0.33-0.331,0.867,0,1.197l20.013,20.013c0.164,0.165,0.382,0.248,0.599,0.248s0.434-0.083,0.599-0.248 c0.331-0.331,0.331-0.867,0-1.198L2.045,20.859z"/>
           </svg>
+          <!-- <use xlink:href="img/sprite.svg#batton-left"></use> -->
         </a>
         <a class="recall__batton-right hidden_mobile hidden_tablet" href="#">
-          <svg width="22" height="42">
-            <use xlink:href="img/sprite.svg#batton-right"></use>
+          <svg viewBox="0 0 21.706 41.719" width="22" height="42">
+            <path fill="#bec2c7" d="M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012 c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248 c-0.331-0.331-0.331-0.867,0-1.198L19.661,20.859z"/>
+            <!-- <use xlink:href="img/sprite.svg#batton-right"></use> -->
           </svg>
         </a>
         <div class="recall__paginator paginator flex-sp hidden_desktop">
@@ -222,7 +224,7 @@
           <th class="price__column">
           </th>
           <th class="price__column price__column-active price__hit">
-            <h3 class="price__head">Стандарт</h3>
+            <p class="price__head">Стандарт</p>
             <p class="price__cost">3,99 USD</p>
           </th>
           <th class="price__column">
@@ -260,15 +262,15 @@
             <th class="price__column-empty">
             </th>
             <th class="price__column">
-              <h3 class="price__head">База</h3>
+              <p class="price__head">База</p>
               <p class="price__cost">1,99 USD</p>
             </th>
             <th class="price__column price__hit">
-              <h3 class="price__head">Стандарт</h3>
+              <p class="price__head">Стандарт</p>
               <p class="price__cost">3,99 USD</p>
             </th>
             <th class="price__column">
-              <h3 class="price__head">Анлим</h3>
+              <p class="price__head">Анлим</p>
               <p class="price__cost">9,99 USD</p>
             </th>
           </tr>
@@ -346,7 +348,7 @@
     <div class="footer__item-box">
       <ul class="icons list-default">
         <li class="icons__item">
-          <a class="button button_icon icons__button btn-social-twitter" href="#">
+          <a class="button button_icon icons__button btn-social-twitter" href="#" aria-label="twitter">
             <svg class="icons__svg" width="17.5" height="14.663">
               <!-- <use xlink:href="#icon-twitter"></use> -->
               <use xlink:href="img/sprite.svg#icon-twitter"></use>
@@ -354,7 +356,7 @@
           </a>
         </li>
         <li class="icons__item">
-          <a class="button button_icon icons__button btn-social-facebook" href="#">
+          <a class="button button_icon icons__button btn-social-facebook" href="#" aria-label="facebook">
             <svg class="icons__svg" width="8.673" height="18.944">
               <!-- <use xlink:href="#icon-facebook"></use> -->
               <use xlink:href="img/sprite.svg#icon-facebook"></use>
@@ -362,7 +364,7 @@
           </a>
         </li>
         <li class="icons__item">
-          <a class="button button_icon icons__button btn-social-youtube" href="#">
+          <a class="button button_icon icons__button btn-social-youtube" href="#" aria-label="youtube">
             <svg class="icons__svg" width="14.64" height="13.96">
               <!-- <use xlink:href="#icon-youtube"></use> -->
               <use xlink:href="img/sprite.svg#icon-youtube"></use>
