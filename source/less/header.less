@@ -38,9 +38,19 @@
 }
 
 .header__logo-piture {
-  display: block;
+  // display: block;
   width: 75px;
   height: 23px;
+  fill: @color-white;
+}
+
+.header__logo:hover .header__logo-piture,
+.header__logo:focus .header__logo-piture {
+  fill: @color-red;
+}
+
+.header__logo:active .header__logo-piture {
+  fill: fade(@color-white, 30%);
 }
 
 .header__menu-list a[href] {
@@ -197,11 +207,14 @@
   }
 
   .header__logo {
-    display: block;
+    // display: block;
     position: unset;
 
-    margin-top: 27px;
     margin-right: 170px;
+  }
+
+  .header__logo-piture {
+    margin-top: 27px;
   }
 
   .header__button-menu {

@@ -22,19 +22,18 @@
 .footer__logo-picture {
   width: 146px;
   height: 40px;
+  fill: @color-blue;
+  color: @color-red;
 }
 
-.footer__logo:hover path,
-.footer__logo:focus path {
+.footer__logo:hover .footer__logo-picture,
+.footer__logo:focus .footer__logo-picture {
   fill: @color-red;
 }
 
-.footer__logo:active path {
-  fill: fade(@color-red, 30%);
-}
-
-.footer__logo:active g path {
+.footer__logo:active .footer__logo-picture {
   fill: fade(@color-blue, 30%);
+  color: fade(@color-red, 30%);
 }
 
 // Копирайт
@@ -60,35 +59,17 @@
   right: 0;
   width: 27px;
   height: 34px;
-}
-
-.footer__developer-logo path {
   fill: @color-red;
 }
 
-.footer__developer-link:hover path,
-.footer__developer-link:focus path {
+.footer__developer-link:hover .footer__developer-logo,
+.footer__developer-link:focus .footer__developer-logo {
   fill: @color-blue;
 }
 
-.footer__developer-link:active path {
+.footer__developer-link:active .footer__developer-logo {
   fill: fade(@color-blue, 30%);
 }
-
-// .footer__developer-link .footer__developer-logo_hover,
-// .footer__developer-link .footer__developer-logo_active,
-// .footer__developer-link:hover .footer__developer-logo_normal,
-// .footer__developer-link:hover .footer__developer-logo_active,
-// .footer__developer-link:active .footer__developer-logo_normal,
-// .footer__developer-link:active .footer__developer-logo_hover {
-//   display: none;
-// }
-
-// .footer__developer-link .footer__developer-logo_normal,
-// .footer__developer-link:hover .footer__developer-logo_hover,
-// .footer__developer-link:active .footer__developer-logo_active {
-//   display: inline-block;
-// }
 
 @media (max-width: @mobile-max) {
   .footer {
@@ -111,18 +92,6 @@
   }
 }
 
-@media (max-width: @tablet-max) {
-  .footer__logo-picture {
-    &_tabletonly {
-      display: block;
-    }
-
-    &_desktoponly {
-      display: none;
-    }
-  }
-}
-
 @media (min-width: @tablet-min) and (max-width: @tablet-max) {
   .footer {
     margin-top: 35px;
@@ -134,16 +103,6 @@
   .footer {
     margin-top: 70px;
     margin-bottom: 65px;
-  }
-
-  .footer__logo-picture {
-    &_tabletonly {
-      display: none;
-    }
-
-    &_desktoponly {
-      display: block;
-    }
   }
 
   .footer__item-box:nth-child(3) {

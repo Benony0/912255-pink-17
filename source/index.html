@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>HTML Academy: Pink</title>
-    <meta name="keywords" content="ключевые слова через запятую">
-    <meta name="description" content="Описание сайта для поисковиков">
+  <meta charset="UTF-8">
+  <title>HTML Academy: Pink</title>
+  <meta name="keywords" content="ключевые слова через запятую">
+  <meta name="description" content="Описание сайта для поисковиков">
 
-    <!-- <meta http-equiv="X-UA-Compatible" content="TE=edge"> -->
-    <meta name="viewport" content="width-device-width, initial-scale=1">
+  <!-- <meta http-equiv="X-UA-Compatible" content="TE=edge"> -->
+  <meta name="viewport" content="width-device-width, initial-scale=1">
 
-    <!-- Нормализация стилей -->
-    <link href="css/normalize.css" rel="stylesheet">
-    <!-- Собственные стили -->
-    <link href="css/style.css" rel="stylesheet">
-    <!-- <link href="css/min_style.css" rel="stylesheet"> -->
+  <link rel="preload" href="/source/fonts/opensans.woff2" as="font">
+  <link rel="preload" href="/source/fonts/opensansbold.woff2" as="font">
+  <link rel="preload" href="/source/fonts/opensanslight.woff2" as="font">
+
+  <!-- Нормализация стилей -->
+  <link href="css/normalize.css" rel="stylesheet">
+  <!-- Собственные стили -->
+  <!-- <link href="css/style.css" rel="stylesheet"> -->
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body>
 
@@ -21,11 +25,15 @@
     <div class="header__container header__container_closed header__container_nojs">
       <div class="header__title">
         <a class="header__logo">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
-            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-            <img class="header__logo-piture" src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="PINK">
-          </picture>
+          <svg class="header__logo-piture hidden_mobile hidden_tablet" width="146.3" height="40.375">
+            <use xlink:href="img/sprite.svg#logo-header-desktop"></use>
+          </svg>
+          <svg class="header__logo-piture hidden_mobile hidden_desktop" width="146.3" height="40.375">
+            <use xlink:href="img/sprite.svg#logo-header-tablet"></use>
+          </svg>
+          <svg class="header__logo-piture hidden_desktop hidden_tablet" width="146.3" height="40.375">
+            <use xlink:href="img/sprite.svg#logo-header-mobile"></use>
+          </svg>
         </a>
         <button class="header__button-menu" type="button"></button>
       </div>
@@ -111,6 +119,9 @@
           <li class="profits__item">
             <div class="profits__picture-box">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/iphone-screen-1-desktop@1x.webp 1x, img/iphone-screen-1-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-screen-1-tablet@1x.webp 1x, img/iphone-screen-1-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/iphone-screen-mobile@1x.webp 1x, img/iphone-screen-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/iphone-screen-1-desktop@1x.png 1x, img/iphone-screen-1-desktop@2x.png 2x">
                 <source media="(min-width: 660px)" srcset="img/iphone-screen-1-tablet@1x.png 1x, img/iphone-screen-1-tablet@2x.png 2x">
                 <img class="profits__picture" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" width="185" height="305" alt="Поднимает настроение">
@@ -122,6 +133,9 @@
           <li class="profits__item">
             <div class="profits__picture-box">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/iphone-screen-2-desktop@1x.webp 1x, img/iphone-screen-2-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-screen-2-tablet@1x.webp 1x, img/iphone-screen-2-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/iphone-screen-mobile@1x.webp 1x, img/iphone-screen-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/iphone-screen-2-desktop@1x.png 1x, img/iphone-screen-2-desktop@2x.png 2x">
                 <source media="(min-width: 660px)" srcset="img/iphone-screen-2-tablet@1x.png 1x, img/iphone-screen-2-tablet@2x.png 2x">
                 <img class="profits__picture" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" width="185" height="305" alt="Меняет мир вокруг">
@@ -133,6 +147,9 @@
           <li class="profits__item">
             <div class="profits__picture-box">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@1x.webp 1x, img/iphone-screen-3-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.webp 1x, img/iphone-screen-3-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/iphone-screen-mobile@1x.webp 1x, img/iphone-screen-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
                 <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
                 <img class="profits__picture" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" width="185" height="305" alt="Заводит новых друзей">
@@ -144,6 +161,9 @@
         </ul>
         <div class="profits__footer">
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@1x.webp 1x, img/iphone-screen-3-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.webp 1x, img/iphone-screen-3-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/iphone-screen-mobile@1x.webp 1x, img/iphone-screen-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
             <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
             <img class="profits__picture" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" width="160" height="275" alt="Всем привет!">
@@ -201,7 +221,7 @@
           <!-- <use xlink:href="img/sprite.svg#batton-left"></use> -->
         </a>
         <a class="recall__batton-right hidden_mobile hidden_tablet" href="#">
-          <svg viewBox="0 0 21.706 41.719" width="22" height="42">
+          <svg viewbox="0 0 21.706 41.719" width="22" height="42">
             <path fill="#bec2c7" d="M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012 c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248 c-0.331-0.331-0.331-0.867,0-1.198L19.661,20.859z"/>
             <!-- <use xlink:href="img/sprite.svg#batton-right"></use> -->
           </svg>
@@ -293,7 +313,7 @@
             <td><img class="price__img-yes" src="img/icon-yes.svg" width="22" height="16" alt="Да"></td>
           </tr>
         </table>
-        <div class="price__paginator paginator flex-sp hidden_tablet hidden_desktop">
+        <div class="paginator flex-sp hidden_tablet hidden_desktop">
           <a class="paginator__point" href="#"></a>
           <a class="paginator__point paginator__point_current" href="#"></a>
           <a class="paginator__point" href="#"></a>
@@ -324,7 +344,10 @@
         </ul>
       </div>
 
-      <div class="map"></div>
+      <div class="map">
+        <img class="map__triangle" width="320" height="35" src="img/bg-triangle-white-footer.svg" alt="">
+        <iframe class="map__iframe" src="https://yandex.ru/map-widget/v1/-/CGGZzAKq" width="215" height="320" frameborder="1" allowfullscreen="true"></iframe>
+      </div>
 
     </section>
 
@@ -334,12 +357,10 @@
 
     <div class="footer__item-box">
       <a class="footer__logo" href="index.html">
-        <svg class="footer__logo-picture footer__logo-picture_tabletonly" width="146.3" height="40.375">
-          <!-- <use xlink:href="#logo-footer-tablet"></use> -->
+        <svg class="footer__logo-picture hidden_mobile hidden_desktop" width="146.3" height="40.375">
           <use xlink:href="img/sprite.svg#logo-footer-tablet"></use>
         </svg>
-        <svg class="footer__logo-picture footer__logo-picture_desktoponly" width="146.3" height="40.375">
-          <!-- <use xlink:href="#logo-footer-desktop"></use> -->
+        <svg class="footer__logo-picture hidden_mobile hidden_tablet" width="146.3" height="40.375">
           <use xlink:href="img/sprite.svg#logo-footer-desktop"></use>
         </svg>
       </a>
@@ -350,7 +371,6 @@
         <li class="icons__item">
           <a class="button button_icon icons__button btn-social-twitter" href="#" aria-label="twitter">
             <svg class="icons__svg" width="17.5" height="14.663">
-              <!-- <use xlink:href="#icon-twitter"></use> -->
               <use xlink:href="img/sprite.svg#icon-twitter"></use>
             </svg>
           </a>
@@ -358,7 +378,6 @@
         <li class="icons__item">
           <a class="button button_icon icons__button btn-social-facebook" href="#" aria-label="facebook">
             <svg class="icons__svg" width="8.673" height="18.944">
-              <!-- <use xlink:href="#icon-facebook"></use> -->
               <use xlink:href="img/sprite.svg#icon-facebook"></use>
             </svg>
           </a>
@@ -366,7 +385,6 @@
         <li class="icons__item">
           <a class="button button_icon icons__button btn-social-youtube" href="#" aria-label="youtube">
             <svg class="icons__svg" width="14.64" height="13.96">
-              <!-- <use xlink:href="#icon-youtube"></use> -->
               <use xlink:href="img/sprite.svg#icon-youtube"></use>
             </svg>
           </a>
@@ -379,7 +397,6 @@
         <a class="footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive">
           Разработано
           <svg class="footer__developer-logo" width="26.943" height="34.09">
-            <!-- <use xlink:href="#logo-academy"></use> -->
             <use xlink:href="img/sprite.svg#logo-academy"></use>
           </svg>
         </a>
@@ -392,8 +409,8 @@
 
   <!-- Подключение скриптов -->
   <script src="js/script.js"></script>
-  <script src="js/svgxuse.js" defer></script>
   <!-- <script src="js/min_script.js"></script> -->
+  <script src="js/svgxuse.js" defer></script>
 
 </body>
 </html>
