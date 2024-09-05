@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+  <meta charset="UTF-8">
+  <title>HTML Academy: Pink</title>
+  <meta name="keywords" content="ключевые слова через запятую">
+  <meta name="description" content="Описание сайта для поисковиков">
+
+  <!-- <meta http-equiv="X-UA-Compatible" content="TE=edge"> -->
+  <meta name="viewport" content="width-device-width, initial-scale=1">
+
+  <link rel="preload" href="/fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
+
+  <!-- Нормализация стилей -->
+  <link href="css/normalize.min.css" rel="stylesheet">
+  <!-- Собственные стили -->
+  <!-- <link href="css/style.css" rel="stylesheet"> -->
+  <link href="css/style.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__container header__container_closed header__container_nojs">
+      <div class="header__title">
+        <a class="header__logo">
+          <svg class="header__logo-piture hidden_mobile hidden_tablet" width="146.3" height="40.375">
+            <use xlink:href="img/sprite.svg#logo-header-desktop"></use>
+          </svg>
+          <svg class="header__logo-piture hidden_mobile hidden_desktop" width="146.3" height="40.375">
+            <use xlink:href="img/sprite.svg#logo-header-tablet"></use>
+          </svg>
+          <svg class="header__logo-piture hidden_desktop hidden_tablet" width="146.3" height="40.375">
+            <use xlink:href="img/sprite.svg#logo-header-mobile"></use>
+          </svg>
+        </a>
+        <button class="header__button-menu" type="button">
+          <span class="header__button-menu_close"></span>
+          <span class="header__button-menu_burger hidden"></span>
+        </button>
+      </div>
+      <ul class="header__menu-list list-default">
+        <li class="header__menu-item">
+          <a class="header__menu-link" href="index.html">Главная</a>
+        </li>
+        <li class="header__menu-item">
+          <a class="header__menu-link" href="photo.html">Фотографии</a>
+        </li>
+        <li class="header__menu-item">
+          <a class="header__menu-link header__menu-link_current">Конкурс</a>
+        </li>
+        <li class="header__menu-item">
+          <a class="header__menu-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="new-post">
+
+      <h1 class="visually-hidden">Конкурс на самое безбашенное путешествие с Пинк</h1>
+
+      <div class="main-title">
+        <p class="main-title__text main-title__text_desktop760 container">Конкурс на самое безбашенное путешествие с Пинк</p>
+      </div>
+
+      <div class="caption-box">
+        <div class="container ones-grid">
+          <div class="caption-box__text">
+            Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+            <span class="hidden_mobile">Пожалуйста, заполните форму ниже:</span>
+          </div>
+        </div>
+      </div>
+
+      <form class="form" method="POST" action="echo.htmlacademy.ru">
+
+        <fieldset class="form__user container">
+          <div class="form__user-item">
+            <label class="form__text form__text_label" for="surname">Фамилия:</label>
+            <input class="form__input" type="text" id="surname" name="surname" placeholder="Укажите фалимию *" required>
+          </div>
+          <div class="form__user-item">
+            <label class="form__text form__text_label" for="name">Имя:</label>
+            <input class="form__input" type="text" id="name" name="name" placeholder="Введите ваше имя *" required>
+          </div>
+          <div class="form__user-item">
+            <label class="form__text form__text_label" for="patronymic">Отчество:</label>
+            <input class="form__input" type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
+          </div>
+        </fieldset>
+
+        <fieldset class="form__progress">
+          <legend class="form__text form__legend-progress hidden_mobile">Ваши безбашенные достижения в путешествии</legend>
+          <div class="form__progress-content container">
+            <div class="form__text form__legend-progress hidden_tablet hidden_desktop">Ваши безбашенные достижения в путешествии</div>
+            <div class="form__progress-items">
+              <div class="form__check">
+                <input class="form__check-btn" type="checkbox" name="selfi" id="checkbox-selfi" checked>
+                <label class="form__check-label" for="checkbox-selfi">Сделал селфи с акулой</label>
+              </div>
+              <div class="form__check">
+                <input class="form__check-btn" type="checkbox" name="fire" id="checkbox-fire" checked>
+                <label class="form__check-label" for="checkbox-fire">Обгорел на пляже</label>
+              </div>
+              <div class="form__check">
+                <input class="form__check-btn" type="checkbox" name="norris" id="checkbox-norris">
+                <label class="form__check-label" for="checkbox-norris">Видел Чака Норриса</label>
+              </div>
+              <div class="form__check">
+                <input class="form__check-btn" type="checkbox" name="souvenir" id="checkbox-souvenir">
+                <label class="form__check-label" for="checkbox-souvenir">Накупил сувениров</label>
+              </div>
+              <div class="form__check">
+                <input class="form__check-btn" type="checkbox" name="tower" id="checkbox-tower" checked>
+                <label class="form__check-label" for="checkbox-tower">Удержал башню</label>
+              </div>
+              <div class="form__check">
+                <input class="form__check-btn" type="checkbox" name="hotel" id="checkbox-hotel">
+                <label class="form__check-label" for="checkbox-hotel">Разгромил отель</label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="form__contacts container">
+          <legend class="form__text form__legend-contacts hidden_mobile">Контактная информация</legend>
+          <div class="form__contacts-content">
+            <div class="form__phone">
+              <label class="form__text form__text_label" for="phone">Номер телефона</label>
+              <input class="form__input form__input-phone" type="number" id="phone" name="phone" placeholder="Номер, пожалуйста">
+              <button class="button button-contact-phone hidden_mobile btn-contact-phone" type="button"><img src="img/icon-phone.svg" alt="tel"></button>
+            </div>
+            <div class="form__email">
+              <label class="form__text form__text_label" for="email">Адрес почты</label>
+              <input class="form__input form__input-email" type="email" id="email" name="email" placeholder="Введите почту *" required>
+              <button class="button button-contact-mail hidden_mobile btn-contact-mail" type="button"><img src="img/icon-mail.svg" alt="min_style"></button>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="form__soft">
+          <legend class="form__text form__legend-soft hidden_mobile">С каким приложением путешествовали?</legend>
+          <div class="form__soft-content container">
+            <div class="form__text form__legend-soft hidden_tablet hidden_desktop">С каким приложением путешествовали?</div>
+            <div class="form__soft-items">
+              <div class="form__radio">
+                <input class="form__radio-btn" type="radio" name="soft" id="radio-ios" checked>
+                <label class="form__radio-label" for="radio-ios">Pink для iOS</label>
+              </div>
+              <div class="form__radio">
+                <input class="form__radio-btn" type="radio" name="soft" id="radio-android">
+                <label class="form__radio-label" for="radio-android">Pink на Android</label>
+              </div>
+              <div class="form__radio">
+                <input class="form__radio-btn" type="radio" name="soft" id="radio-win">
+                <label class="form__radio-label" for="radio-win">Windows Phone</label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="form__feedback container">
+          <legend class="form__text form__legend-feedback">Опишите свои эмоции</legend>
+          <textarea class="form__input form__input-feedback" name="feedback" rows="6" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </fieldset>
+
+        <div class="form__footer container">
+          <button class="button button_form btn-form-submit" type="submit">Отправить форму</button>
+          <p class="form__footer-caption">
+            <span class="form__text">*</span>
+            &mdash; обязательные <span class="hidden_mobile hidden_tablet">для заполнения</span> поля
+          </p>
+        </div>
+
+      </form>
+
+    </section>
+
+  </main>
+
+  <footer class="footer container cmob-to-rtabdesk cmob-to-rtabdesk_sb">
+
+    <div class="footer__item-box">
+      <a class="footer__logo" href="index.html">
+        <svg class="footer__logo-picture hidden_mobile hidden_desktop" width="146.3" height="40.375">
+          <use xlink:href="img/sprite.svg#logo-footer-tablet"></use>
+        </svg>
+        <svg class="footer__logo-picture hidden_mobile hidden_tablet" width="146.3" height="40.375">
+          <use xlink:href="img/sprite.svg#logo-footer-desktop"></use>
+        </svg>
+      </a>
+    </div>
+
+    <div class="footer__item-box">
+      <ul class="icons list-default">
+        <li class="icons__item">
+          <a class="button button_icon icons__button btn-social-twitter" href="#" aria-label="twitter">
+            <svg class="icons__svg" width="17.5" height="14.663">
+              <use xlink:href="img/sprite.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="icons__item">
+          <a class="button button_icon icons__button btn-social-facebook" href="#" aria-label="facebook">
+            <svg class="icons__svg" width="8.673" height="18.944">
+              <use xlink:href="img/sprite.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="icons__item">
+          <a class="button button_icon icons__button btn-social-youtube" href="#" aria-label="youtube">
+            <svg class="icons__svg" width="14.64" height="13.96">
+              <use xlink:href="img/sprite.svg#icon-youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer__item-box">
+      <p class="footer__developer">
+        <a class="footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive">
+          Разработано
+          <svg class="footer__developer-logo" width="26.943" height="34.09">
+            <use xlink:href="img/sprite.svg#logo-academy"></use>
+          </svg>
+        </a>
+      </p>
+    </div>
+
+  </footer>
+
+  <form class="popup popup__error hidden" method="POST" action="echo.htmlacademy.ru">
+    <div class="popup__main ones-grid">
+      <h2 class="popup__title">
+        Что-то пошло не так!
+      </h2>
+      <p class="popup__text">
+        Проверьте поля, выделенные красным, скорее всего вызабыли их заполнить
+      </p>
+    </div>
+    <div class="popup__footer-error ones-grid">
+      <button class="button button_form btn-popup-error-ok" type="button">OK</button>
+    </div>
+  </form>
+
+  <form class="popup popup__send hidden" method="POST" action="echo.htmlacademy.ru">
+    <div class="popup__main ones-grid">
+      <h2 class="popup__title">
+        Ваша заявка отправлена
+      </h2>
+      <p class="popup__text">
+        Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.
+      </p>
+    </div>
+    <div class="popup__footer-send ones-grid">
+      <button class="button button_form btn-popup-send-ok" type="button">Закрыть окно</button>
+    </div>
+  </form>
+
+  <!-- Подключение скриптов -->
+  <script src="js/script.js"></script>
+  <script src="js/forms.js"></script>
+  <!-- <script src="js/min_script.js"></script> -->
+  <script src="js/svgxuse.js" defer></script>
+
+</body>
+</html>

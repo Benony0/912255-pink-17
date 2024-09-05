@@ -13,4 +13,3 @@ source/css/*.map
 Thumbs.db
 design/*.*
 design/preview/*.*
-build/
